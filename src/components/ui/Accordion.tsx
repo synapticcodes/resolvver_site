@@ -13,29 +13,35 @@ interface AccordionItemProps {
 
 function AccordionItem({ question, answer, isOpen, onToggle }: AccordionItemProps) {
   return (
-    <div className="border-b border-gray-200 last:border-0">
+    <div className="rounded-2xl bg-[#123c35] text-white shadow-sm">
       <button
         onClick={onToggle}
-        className="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-brand-sky/30 transition-colors"
+        className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-[#0f2b2a] transition-colors rounded-2xl"
         aria-expanded={isOpen}
       >
-        <span className="text-lg font-semibold text-brand-navy pr-8">
+        <span className="text-base md:text-lg font-semibold text-brand-sky pr-8">
           {question}
         </span>
         <svg
           className={cn(
-            'w-5 h-5 text-brand-emerald transition-transform duration-200 flex-shrink-0',
-            isOpen && 'rotate-180'
+            'w-5 h-5 text-brand-emerald transition-transform duration-200 flex-shrink-0'
           )}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
         >
           <path
+            className={cn('transition-opacity', isOpen && 'opacity-0')}
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M19 9l-7 7-7-7"
+            d="M12 5v14"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M5 12h14"
           />
         </svg>
       </button>
@@ -45,7 +51,7 @@ function AccordionItem({ question, answer, isOpen, onToggle }: AccordionItemProp
           isOpen ? 'max-h-96' : 'max-h-0'
         )}
       >
-        <div className="px-6 pb-5 text-brand-slate leading-relaxed">
+        <div className="px-6 pb-5 text-brand-sky/80 leading-relaxed">
           {answer}
         </div>
       </div>
@@ -85,7 +91,7 @@ export default function Accordion({
   }
 
   return (
-    <div className={cn('bg-white rounded-xl shadow-sm border border-gray-200', className)}>
+    <div className={cn('flex flex-col gap-3', className)}>
       {items.map((item) => (
         <AccordionItem
           key={item.id}
