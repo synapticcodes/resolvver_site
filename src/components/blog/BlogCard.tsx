@@ -1,9 +1,11 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import Card from '@/components/ui/Card'
 import type { BlogPostMetadata } from '@/types/blog'
 
 interface BlogCardProps {
   post: BlogPostMetadata
+  index?: number
 }
 
 const categoryLabels = {
@@ -13,15 +15,34 @@ const categoryLabels = {
 }
 
 const categoryColors = {
-  'conselhos-financeiros': 'bg-blue-100 text-blue-800',
-  'credito': 'bg-green-100 text-green-800',
-  'sobre-nos': 'bg-purple-100 text-purple-800',
+  'conselhos-financeiros': 'bg-brand-mint text-brand-emerald',
+  'credito': 'bg-brand-mint text-brand-emerald',
+  'sobre-nos': 'bg-brand-mint text-brand-emerald',
 }
 
-export default function BlogCard({ post }: BlogCardProps) {
+const cardImages = [
+  '/images/photos/1.png.webp',
+  '/images/photos/2.jpg',
+  '/images/photos/3.jpg',
+  '/images/photos/4.jpg',
+  '/images/photos/5.jpg',
+]
+
+export default function BlogCard({ post, index = 0 }: BlogCardProps) {
+  const image = post.thumbnailUrl ?? cardImages[index % cardImages.length]
+
   return (
     <Link href={`/blog/${post.slug}`}>
       <Card hover className="h-full flex flex-col">
+        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-brand-sky/70 mb-4">
+          <Image
+            src={image}
+            alt={post.title}
+            fill
+            className="object-cover"
+            sizes="(min-width: 1024px) 360px, 90vw"
+          />
+        </div>
         <div className="mb-3">
           <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${categoryColors[post.category]}`}>
             {categoryLabels[post.category]}

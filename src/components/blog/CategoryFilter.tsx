@@ -17,16 +17,17 @@ const categories = [
 
 export default function CategoryFilter({ selectedCategory, onCategoryChange }: CategoryFilterProps) {
   return (
-    <div className="flex flex-wrap gap-3 justify-center mb-12">
+    <div className="flex flex-wrap items-center gap-3 justify-center md:justify-start mb-12">
+      <span className="text-xs uppercase tracking-wider text-brand-slate">Lista de leitura</span>
       {categories.map((category) => (
         <button
           key={category.id}
           onClick={() => onCategoryChange(category.id as BlogCategory | 'todos')}
           className={cn(
-            'px-6 py-3 rounded-lg font-medium transition-all',
+            'px-2 py-1 text-sm font-medium transition-colors border-b-2',
             selectedCategory === category.id
-              ? 'bg-brand-emerald text-white shadow-md'
-              : 'bg-white text-brand-slate border border-gray-300 hover:border-brand-emerald hover:text-brand-emerald'
+              ? 'text-brand-emerald border-brand-emerald'
+              : 'text-brand-slate border-transparent hover:text-brand-emerald'
           )}
         >
           {category.label}
