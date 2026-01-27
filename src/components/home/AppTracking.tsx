@@ -9,7 +9,7 @@ export default function AppTracking() {
   return (
     <section className="py-16 md:py-24 bg-white">
       <Container>
-        <div className="rounded-3xl bg-[#123c35] text-white px-6 py-10 md:px-12 md:py-14 shadow-soft">
+        <div className="rounded-3xl bg-brand-navy text-white px-6 py-10 md:px-12 md:py-14 shadow-soft">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">

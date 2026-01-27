@@ -14,7 +14,7 @@ export default function SimulatePage() {
       <section className="py-16 md:py-24 bg-white">
         <Container size="small">
           <div className="text-center mb-10">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-mint text-brand-emerald text-xs font-semibold uppercase tracking-wider">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-sky/60 text-brand-emerald text-xs font-semibold uppercase tracking-wider">
               Simule seu programa
             </span>
             <h1 className="text-4xl md:text-5xl font-semibold mt-6 mb-4 text-balance text-brand-navy">

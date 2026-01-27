@@ -25,7 +25,7 @@ export default function Testimonials() {
         </div>
 
         <div className="flex flex-col items-center gap-3 mb-10">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-mint text-brand-emerald text-xs font-semibold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-sky/60 text-brand-emerald text-xs font-semibold uppercase tracking-wider">
             Excelente
           </span>
           <div className="flex items-center gap-1 text-amber-400">

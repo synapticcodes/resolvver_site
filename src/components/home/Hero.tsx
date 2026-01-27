@@ -16,7 +16,7 @@ export default function Hero() {
       <Container className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
           <div className="max-w-xl">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-mint text-brand-emerald text-xs font-semibold uppercase tracking-wider">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-sky/60 text-brand-emerald text-xs font-semibold uppercase tracking-wider">
               Novo programa de renegociação
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl mt-6 mb-4 text-balance">

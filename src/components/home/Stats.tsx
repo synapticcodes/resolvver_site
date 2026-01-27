@@ -9,7 +9,7 @@ export default function Stats() {
           {stats.map((stat) => (
             <div
               key={stat.id}
-              className="text-center rounded-2xl border border-brand-sky/70 bg-brand-mint/70 px-6 py-8 shadow-sm"
+              className="text-center rounded-2xl border border-brand-sky/70 bg-brand-sky/50 px-6 py-8 shadow-sm"
             >
               <div className="text-4xl md:text-5xl font-semibold text-brand-emerald mb-2">
                 {stat.value}

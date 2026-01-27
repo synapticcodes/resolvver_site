@@ -24,7 +24,7 @@ export default function BlogPage() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
             <div className="max-w-xl">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-mint text-brand-emerald text-xs font-semibold uppercase tracking-wider">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-sky/60 text-brand-emerald text-xs font-semibold uppercase tracking-wider">
                 Blog Resolvver
               </span>
               <h1 className="text-4xl md:text-5xl font-semibold mt-6 mb-4 text-balance">
@@ -79,7 +79,7 @@ export default function BlogPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-[#123c35]">
+      <section className="py-16 md:py-24 bg-brand-navy">
         <Container>
           <div className="mx-auto max-w-5xl rounded-3xl bg-white/95 p-6 md:p-10 shadow-soft">
             <div className="grid grid-cols-1 md:grid-cols-[1.05fr_0.95fr] gap-8 items-center">

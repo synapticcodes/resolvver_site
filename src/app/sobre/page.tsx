@@ -16,7 +16,7 @@ export default function AboutPage() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
             <div className="max-w-xl">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-mint text-brand-emerald text-xs font-semibold uppercase tracking-wider">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-sky/60 text-brand-emerald text-xs font-semibold uppercase tracking-wider">
                 {aboutContent.hero.badge}
               </span>
               <h1 className="text-4xl md:text-5xl font-semibold mt-6 mb-4 text-balance">
@@ -50,7 +50,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-brand-sky/10">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
-            <div className="rounded-3xl bg-[#123c35] text-white p-8 md:p-10 shadow-soft">
+            <div className="rounded-3xl bg-brand-navy text-white p-8 md:p-10 shadow-soft">
               <h2 className="text-2xl md:text-3xl font-semibold mb-4">
                 {aboutContent.story.title}
               </h2>
@@ -114,7 +114,7 @@ export default function AboutPage() {
       {/* Stat Section */}
       <section className="py-16 md:py-24 bg-white">
         <Container>
-          <div className="mx-auto max-w-3xl rounded-3xl border border-brand-sky/70 bg-brand-mint/80 px-6 py-10 text-center shadow-sm">
+          <div className="mx-auto max-w-3xl rounded-3xl border border-brand-sky/70 bg-brand-sky/60 px-6 py-10 text-center shadow-sm">
             <div className="text-5xl md:text-6xl font-semibold text-brand-emerald mb-4">
               {aboutContent.stat.value}
             </div>

@@ -15,9 +15,9 @@ const categoryLabels = {
 }
 
 const categoryColors = {
-  'conselhos-financeiros': 'bg-brand-mint text-brand-emerald',
-  'credito': 'bg-brand-mint text-brand-emerald',
-  'sobre-nos': 'bg-brand-mint text-brand-emerald',
+  'conselhos-financeiros': 'bg-brand-sky/60 text-brand-emerald',
+  'credito': 'bg-brand-sky/60 text-brand-emerald',
+  'sobre-nos': 'bg-brand-sky/60 text-brand-emerald',
 }
 
 const cardImages = [

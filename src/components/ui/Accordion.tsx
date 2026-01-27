@@ -13,10 +13,10 @@ interface AccordionItemProps {
 
 function AccordionItem({ question, answer, isOpen, onToggle }: AccordionItemProps) {
   return (
-    <div className="rounded-2xl bg-[#123c35] text-white shadow-sm">
+    <div className="rounded-2xl bg-brand-navy text-white shadow-sm">
       <button
         onClick={onToggle}
-        className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-[#0f2b2a] transition-colors rounded-2xl"
+        className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-brand-navy/90 transition-colors rounded-2xl"
         aria-expanded={isOpen}
       >
         <span className="text-base md:text-lg font-semibold text-brand-sky pr-8">
