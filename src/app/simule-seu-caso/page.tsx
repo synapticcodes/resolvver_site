@@ -10,48 +10,37 @@ export const metadata: Metadata = {
 export default function SimulatePage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-brand-navy to-brand-slate text-white">
-        <Container>
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Liquidamos suas dívidas com até 90% de desconto
-            </h1>
-            <p className="text-xl text-brand-sky">
-              Conquiste sua liberdade financeira sem pesar no bolso
-            </p>
-          </div>
-        </Container>
-      </section>
-
-      {/* Form Section */}
+      {/* Hero + Form */}
       <section className="py-16 md:py-24 bg-white">
         <Container size="small">
-          <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8 md:p-12">
-            <div className="mb-8">
-              <h2 className="text-3xl font-bold text-brand-navy mb-4">
-                Simule seu programa
-              </h2>
-              <p className="text-brand-slate">
-                Descubra quanto você poderia reduzir das suas dívidas com nosso simulador. Preencha o formulário abaixo e nossa equipe entrará em contato.
-              </p>
-            </div>
+          <div className="text-center mb-10">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-mint text-brand-emerald text-xs font-semibold uppercase tracking-wider">
+              Simule seu programa
+            </span>
+            <h1 className="text-4xl md:text-5xl font-semibold mt-6 mb-4 text-balance text-brand-navy">
+              Liquidamos suas dívidas com até 90% de desconto
+            </h1>
+            <p className="text-lg md:text-xl text-brand-slate">
+              Descubra quanto você poderia pagar com nosso simulador.
+            </p>
+          </div>
 
+          <div className="mx-auto max-w-md rounded-3xl border border-brand-sky/70 bg-white p-8 shadow-soft">
             <LeadForm />
           </div>
         </Container>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 md:py-24 bg-brand-sky/20">
+      <section className="py-12 md:py-16 bg-brand-sky/10">
         <Container>
-          <h2 className="text-3xl font-bold text-brand-navy text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-semibold text-brand-navy text-center mb-10">
             Por que escolher a Resolvver?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-brand-emerald/10 flex items-center justify-center">
+            <div className="text-center rounded-2xl bg-white border border-brand-sky/70 p-6 shadow-sm">
+              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-brand-emerald/10 flex items-center justify-center">
                 <svg className="w-8 h-8 text-brand-emerald" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -64,8 +53,8 @@ export default function SimulatePage() {
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-brand-emerald/10 flex items-center justify-center">
+            <div className="text-center rounded-2xl bg-white border border-brand-sky/70 p-6 shadow-sm">
+              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-brand-emerald/10 flex items-center justify-center">
                 <svg className="w-8 h-8 text-brand-emerald" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -78,8 +67,8 @@ export default function SimulatePage() {
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-brand-emerald/10 flex items-center justify-center">
+            <div className="text-center rounded-2xl bg-white border border-brand-sky/70 p-6 shadow-sm">
+              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-brand-emerald/10 flex items-center justify-center">
                 <svg className="w-8 h-8 text-brand-emerald" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>

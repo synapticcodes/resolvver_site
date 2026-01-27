@@ -109,9 +109,9 @@ export default function LeadForm() {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className={`w-full px-4 py-3 rounded-lg border ${
-            errors.name ? 'border-red-500' : 'border-gray-300'
-          } focus:ring-2 focus:ring-brand-emerald focus:border-transparent`}
+          className={`w-full px-4 py-3 rounded-xl border ${
+            errors.name ? 'border-red-500' : 'border-brand-emerald/40'
+          } focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald`}
           placeholder="Seu nome completo"
         />
         {errors.name && (
@@ -130,9 +130,9 @@ export default function LeadForm() {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className={`w-full px-4 py-3 rounded-lg border ${
-            errors.email ? 'border-red-500' : 'border-gray-300'
-          } focus:ring-2 focus:ring-brand-emerald focus:border-transparent`}
+          className={`w-full px-4 py-3 rounded-xl border ${
+            errors.email ? 'border-red-500' : 'border-brand-emerald/40'
+          } focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald`}
           placeholder="seu@email.com"
         />
         {errors.email && (
@@ -151,9 +151,9 @@ export default function LeadForm() {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          className={`w-full px-4 py-3 rounded-lg border ${
-            errors.phone ? 'border-red-500' : 'border-gray-300'
-          } focus:ring-2 focus:ring-brand-emerald focus:border-transparent`}
+          className={`w-full px-4 py-3 rounded-xl border ${
+            errors.phone ? 'border-red-500' : 'border-brand-emerald/40'
+          } focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald`}
           placeholder="(11) 98765-4321"
         />
         {errors.phone && (
@@ -171,7 +171,7 @@ export default function LeadForm() {
           name="debtAmount"
           value={formData.debtAmount}
           onChange={handleChange}
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent"
+          className="w-full px-4 py-3 rounded-xl border border-brand-emerald/40 focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald"
         >
           <option value="">Selecione uma faixa</option>
           <option value="Menos de R$ 5.000">Menos de R$ 5.000</option>
@@ -192,7 +192,7 @@ export default function LeadForm() {
           value={formData.message}
           onChange={handleChange}
           rows={4}
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent"
+          className="w-full px-4 py-3 rounded-xl border border-brand-emerald/40 focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald"
           placeholder="Conte-nos um pouco mais sobre sua situação..."
         />
         {errors.message && (
@@ -208,10 +208,10 @@ export default function LeadForm() {
           name="consent"
           checked={formData.consent || false}
           onChange={handleChange}
-          className={`mt-1 w-4 h-4 text-brand-emerald border-gray-300 rounded focus:ring-brand-emerald ${
-            errors.consent ? 'border-red-500' : ''
-          }`}
-        />
+        className={`mt-1 w-4 h-4 text-brand-emerald border-brand-emerald/40 rounded focus:ring-brand-emerald ${
+          errors.consent ? 'border-red-500' : ''
+        }`}
+      />
         <label htmlFor="consent" className="ml-2 text-sm text-brand-slate">
           Concordo em compartilhar minhas informações para receber contato da Resolvver. Li e aceito a{' '}
           <a href="/privacidade" className="text-brand-emerald hover:underline">
@@ -230,14 +230,14 @@ export default function LeadForm() {
 
       {/* Submit Error */}
       {errors.submit && (
-        <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+        <div className="p-4 bg-red-50 border border-red-200 rounded-xl">
           <p className="text-sm text-red-600">{errors.submit}</p>
         </div>
       )}
 
       {/* Success Message */}
       {submitStatus === 'success' && (
-        <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
+        <div className="p-4 bg-green-50 border border-green-200 rounded-xl">
           <p className="text-sm text-green-600 font-medium">
             Formulário enviado com sucesso! Nossa equipe entrará em contato em breve.
           </p>
