@@ -15,21 +15,21 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-brand-sky/60 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <div className="bg-brand-emerald text-white text-xs">
-        <Container className="py-2 flex items-center justify-center">
+        <Container className="py-0.5 flex items-center justify-center">
           Recomende a um amigo e ganhe descontos na próxima negociação.
         </Container>
       </div>
 
       <Container>
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-20 md:h-24 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-header.png"
               alt="Resolvver"
-              width={150}
-              height={40}
-              className="h-10 w-auto"
+              width={420}
+              height={274}
+              className="h-24 w-auto md:h-28"
               priority
             />
           </Link>

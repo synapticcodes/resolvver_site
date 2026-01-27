@@ -14,11 +14,11 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="inline-block mb-4">
               <Image
-                src="/images/logo.png"
+                src="/images/logo-footer.png"
                 alt="Resolvver"
-                width={150}
-                height={40}
-                className="h-10 w-auto brightness-0 invert"
+                width={260}
+                height={174}
+                className="h-16 w-auto md:h-20"
               />
             </Link>
             <p className="text-brand-sky/80 text-sm leading-relaxed mb-4">

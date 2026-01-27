@@ -32,7 +32,7 @@ export default function PartnersGrid() {
                 alt={partner.name}
                 width={120}
                 height={60}
-                className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all"
+                className="w-full h-auto object-contain"
               />
             </div>
           ))}
