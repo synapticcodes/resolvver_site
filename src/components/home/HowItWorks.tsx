@@ -17,28 +17,21 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {howItWorksSteps.map((step, index) => (
-            <div key={step.id} className="relative">
-              {/* Step number */}
-              <div className="mb-4">
-                <div className="w-12 h-12 rounded-full bg-brand-emerald text-white flex items-center justify-center text-xl font-bold">
+            <div key={step.id} className="relative rounded-2xl border border-brand-sky/70 bg-white p-6 shadow-sm">
+              <div className="mb-4 flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-brand-emerald/15 text-brand-emerald flex items-center justify-center text-lg font-semibold">
                   {index + 1}
                 </div>
+                <span className="text-xs uppercase tracking-wider text-brand-slate">Passo {index + 1}</span>
               </div>
-
-              {/* Content */}
-              <h3 className="text-xl font-bold text-brand-navy mb-3">
+              <h3 className="text-lg font-semibold text-brand-navy mb-3">
                 {step.title}
               </h3>
-              <p className="text-brand-slate leading-relaxed">
+              <p className="text-brand-slate leading-relaxed text-sm">
                 {step.description}
               </p>
-
-              {/* Connector line (desktop only) */}
-              {index < howItWorksSteps.length - 1 && (
-                <div className="hidden lg:block absolute top-6 left-12 w-full h-0.5 bg-brand-emerald/20" />
-              )}
             </div>
           ))}
         </div>

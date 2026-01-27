@@ -15,6 +15,7 @@ const config: Config = {
           sky: '#D4EEEE',
           slate: '#4A5668',
           white: '#FFFFFF',
+          mint: '#E6FAF6',
         },
       },
     },

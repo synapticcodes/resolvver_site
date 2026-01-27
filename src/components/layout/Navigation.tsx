@@ -17,10 +17,10 @@ export default function Navigation() {
             key={item.href}
             href={item.href}
             className={cn(
-              'px-4 py-2 rounded-lg text-sm font-medium transition-colors',
+              'px-4 py-2 rounded-full text-sm font-medium transition-colors',
               isActive
-                ? 'bg-brand-emerald text-white'
-                : 'text-brand-navy hover:bg-brand-sky hover:text-brand-emerald'
+                ? 'bg-brand-emerald text-white shadow-sm shadow-brand-emerald/20'
+                : 'text-brand-navy hover:bg-brand-sky/70 hover:text-brand-emerald'
             )}
           >
             {item.name}

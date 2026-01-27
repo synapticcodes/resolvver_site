@@ -25,7 +25,7 @@ export default function PartnersGrid() {
           {partnerLogos.map((partner) => (
             <div
               key={partner.id}
-              className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
+              className="flex items-center justify-center p-4 bg-white border border-brand-sky/70 rounded-2xl hover:shadow-md hover:-translate-y-0.5 transition-all"
             >
               <Image
                 src={partner.imagePath}

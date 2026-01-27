@@ -13,7 +13,13 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+    <header className="sticky top-0 z-50 w-full border-b border-brand-sky/60 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+      <div className="bg-brand-emerald text-white text-xs">
+        <Container className="py-2 flex items-center justify-center">
+          Recomende a um amigo e ganhe descontos na próxima negociação.
+        </Container>
+      </div>
+
       <Container>
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
@@ -69,7 +75,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-4 py-2 text-brand-navy hover:bg-brand-sky rounded-lg transition-colors"
+                className="px-4 py-2 text-brand-navy hover:bg-brand-sky/60 rounded-full transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}

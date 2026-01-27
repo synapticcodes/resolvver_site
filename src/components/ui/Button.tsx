@@ -24,13 +24,13 @@ export default function Button({
   className,
   fullWidth = false,
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed'
+  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:-translate-y-0.5 active:translate-y-0'
 
   const variants = {
-    primary: 'bg-brand-emerald text-white hover:bg-brand-emerald/90 focus:ring-brand-emerald shadow-sm',
-    secondary: 'bg-brand-navy text-white hover:bg-brand-navy/90 focus:ring-brand-navy shadow-sm',
-    outline: 'border-2 border-brand-emerald text-brand-emerald hover:bg-brand-emerald hover:text-white focus:ring-brand-emerald',
-    ghost: 'text-brand-navy hover:bg-brand-sky focus:ring-brand-navy',
+    primary: 'bg-brand-emerald text-white hover:bg-brand-emerald/90 focus:ring-brand-emerald shadow-lg shadow-brand-emerald/20',
+    secondary: 'bg-brand-navy text-white hover:bg-brand-navy/90 focus:ring-brand-navy shadow-lg shadow-brand-navy/20',
+    outline: 'border-2 border-brand-emerald text-brand-emerald hover:bg-brand-emerald hover:text-white focus:ring-brand-emerald bg-white/70',
+    ghost: 'text-brand-navy hover:bg-brand-sky/60 focus:ring-brand-navy',
   }
 
   const sizes = {

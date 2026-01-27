@@ -32,8 +32,8 @@ export default function Benefits() {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit) => (
-            <Card key={benefit.id} hover className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-brand-emerald/10 flex items-center justify-center text-brand-emerald">
+            <Card key={benefit.id} hover className="text-center bg-white/90">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-brand-emerald/15 flex items-center justify-center text-brand-emerald">
                 {iconMap[benefit.icon]}
               </div>
               <h3 className="text-lg font-bold text-brand-navy mb-2">

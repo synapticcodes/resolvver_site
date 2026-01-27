@@ -5,15 +5,26 @@ export default function MediaSection() {
   const { media } = homeContent
 
   return (
-    <section className="py-16 md:py-24 bg-brand-sky/20">
+    <section className="py-16 md:py-24 bg-brand-sky/10">
       <Container>
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-mint text-brand-emerald text-xs font-semibold uppercase tracking-wider">
+            Transparência e confiança
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4 mt-6">
             {media.title}
           </h2>
-          <p className="text-xl text-brand-slate max-w-3xl mx-auto">
+          <p className="text-xl text-brand-slate max-w-3xl mx-auto mb-8">
             {media.subtitle}
           </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-brand-slate">
+            {['Imprensa', 'Educação financeira', 'Histórias reais', 'Cases de sucesso'].map((item) => (
+              <span key={item} className="px-4 py-2 rounded-full border border-brand-sky/80 bg-white">
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </Container>
     </section>

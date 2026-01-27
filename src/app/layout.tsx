@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Manrope, Space_Grotesk } from 'next/font/google'
 import './globals.css'
 import { siteConfig } from '@/config/site'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-body' })
+const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-heading' })
 
 export const metadata: Metadata = {
   title: {
@@ -59,7 +60,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
+      <body className={`${manrope.variable} ${spaceGrotesk.variable}`}>
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

@@ -1,7 +1,7 @@
 export const homeContent = {
   hero: {
     headline: 'Resolva suas dívidas de forma leve',
-    subheadline: '--- e ganhe fôlego para recomeçar.',
+    subheadline: 'E ganhe fôlego para recomeçar.',
     primaryCta: 'Comece já',
     secondaryCta: 'Simule seu caso',
   },
