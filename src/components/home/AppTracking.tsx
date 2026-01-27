@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Container from '@/components/ui/Container'
 import Button from '@/components/ui/Button'
 import { homeContent } from '@/data/home-content'
@@ -48,19 +49,16 @@ export default function AppTracking() {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-brand-emerald/20 to-brand-sky/10 rounded-3xl p-8">
-                <div className="aspect-[10/12] max-w-sm mx-auto bg-white/5 rounded-3xl border border-white/15 flex items-center justify-center relative overflow-hidden">
-                  <div className="text-center p-8">
-                    <svg className="w-16 h-16 mx-auto mb-4 text-brand-emerald" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                    </svg>
-                    <p className="text-brand-sky text-sm">App Resolvver</p>
-                  </div>
-
-                  <div className="absolute -right-8 -bottom-8 bg-white/90 text-brand-navy rounded-2xl p-4 shadow-lg float-medium">
-                    <p className="text-xs text-brand-slate">Status da negociação</p>
-                    <p className="text-sm font-semibold">Em andamento</p>
-                  </div>
+              <div className="rounded-3xl px-6 py-8 md:px-8 md:py-10">
+                <div className="relative mx-auto max-w-sm h-[300px] sm:h-[360px] md:h-[400px] lg:h-[440px] overflow-visible">
+                  <Image
+                    src="/images/app-resolvver-mock.png"
+                    alt="Tela do App Resolvver"
+                    fill
+                    priority
+                    className="object-contain object-right scale-[1.6] sm:scale-[1.75] md:scale-[1.9] translate-x-4 sm:translate-x-6 md:translate-x-8 drop-shadow-[0_30px_50px_rgba(0,0,0,0.35)]"
+                    sizes="(min-width: 1280px) 520px, (min-width: 1024px) 480px, 80vw"
+                  />
                 </div>
               </div>
             </div>
