@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'entenda-seu-relatorio-de-credito',
-  title: 'Entenda Seu Relatório de Crédito',
+  title: 'Como ganhar dinheiro com nota fiscal: CPF na nota, créditos e sorteios',
   excerpt: 'Como ganhar dinheiro com nota fiscal: CPF na nota, créditos e sorteios Você sabia que pedir CPF na nota fiscal pode gerar créditos, sorteios e até din...',
   category: 'credito',
   readTime: 7,
   publishedAt: '2025-01-11',
+  thumbnailUrl: '/images/blog/8.jpg',
   content: `<p><strong>Como ganhar dinheiro com nota fiscal: CPF na nota, créditos e sorteios</strong></p>
 <p></p>
 <p>Você sabia que pedir <strong>CPF na nota fiscal</strong> pode gerar <strong>créditos, sorteios e até dinheiro de volta</strong>? Em vários estados do Brasil existem programas oficiais que devolvem parte dos impostos arrecadados em compras e ainda distribuem prêmios para quem participa.</p>

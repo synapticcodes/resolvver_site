@@ -50,16 +50,13 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-brand-sky/10">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
-            <div className="rounded-3xl bg-brand-navy text-white p-8 md:p-10 shadow-soft">
-              <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-                {aboutContent.story.title}
-              </h2>
+            <div className="rounded-3xl bg-brand-navy text-white px-8 pb-8 pt-4 md:px-10 md:pb-10 md:pt-5 shadow-soft">
               {aboutContent.story.body.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="text-brand-sky/80 leading-relaxed mb-4">
+                <p key={index} className="text-brand-sky/80 leading-relaxed mb-3">
                   {paragraph}
                 </p>
               ))}
-              <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-2xl border border-white/10">
+              <div className="relative mt-6 aspect-[4/3] overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src={aboutContent.story.image}
                   alt="Time Resolvver"

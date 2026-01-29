@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'educacao-financeira-na-pratica',
-  title: 'Educação Financeira na Prática',
+  title: 'Aplicativo falso no celular: como reconhecer, evitar e se proteger de golpes',
   excerpt: 'Aplicativo falso no celular: como reconhecer, evitar e se proteger de golpes Hoje a gente resolve praticamente tudo pelo celular: banco, compras, docu...',
   category: 'conselhos-financeiros',
   readTime: 8,
   publishedAt: '2025-01-08',
+  thumbnailUrl: '/images/blog/11.webp',
   content: `<p><strong>Aplicativo falso no celular: como reconhecer, evitar e se proteger de golpes</strong></p>
 <p></p>
 <p>Hoje a gente resolve praticamente tudo pelo celular: banco, compras, documentos, trabalho. E é justamente por isso que <strong>aplicativos falsos</strong> viraram uma das iscas preferidas de golpistas. Eles criam apps que parecem reais — com nome, ícone e tela muito parecidos — para <strong>roubar senhas, interceptar códigos e até acessar informações do aparelho</strong>.</p>

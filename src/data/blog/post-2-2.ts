@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'sobre-a-resolvver',
-  title: 'Sobre a Resolvver',
+  title: 'Quando faz sentido aumentar o limite do cartão de crédito?',
   excerpt: 'Quando faz sentido aumentar o limite do cartão de crédito? Chegou aquela notificação do banco dizendo algo como: “Pelo bom uso do seu cartão, liberamo...',
-  category: 'sobre-nos',
+  category: 'credito',
   readTime: 5,
   publishedAt: '2025-01-02',
+  thumbnailUrl: '/images/blog/17.png',
   content: `<p><strong>Quando faz sentido aumentar o limite do cartão de crédito?</strong></p>
 <p></p>
 <p>Chegou aquela notificação do banco dizendo algo como: <strong>“Pelo bom uso do seu cartão, liberamos um aumento de limite”</strong>? É normal ficar animado — mas antes de aceitar no impulso, vale parar 2 minutos para entender se esse aumento realmente combina com o seu momento financeiro.</p>

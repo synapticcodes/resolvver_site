@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'tipos-de-credito-disponiveis',
-  title: 'Tipos de Crédito Disponíveis',
+  title: 'Cartão de crédito para aposentado: como funciona, vantagens e desvantagens',
   excerpt: 'Cartão de crédito para aposentado: como funciona, vantagens e desvantagens O cartão de crédito para aposentado pode ser uma boa ferramenta de praticid...',
   category: 'credito',
   readTime: 9,
   publishedAt: '2025-01-12',
+  thumbnailUrl: '/images/blog/7.webp',
   content: `<p><strong>Cartão de crédito para aposentado: como funciona, vantagens e desvantagens</strong></p>
 <p></p>
 <p>O <strong>cartão de crédito para aposentado</strong> pode ser uma boa ferramenta de praticidade e organização — mas também pode virar armadilha se você não entender <strong>qual tipo de cartão está contratando</strong> e como a cobrança acontece.</p>

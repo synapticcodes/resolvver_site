@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'depoimentos-de-clientes',
-  title: 'Depoimentos de Clientes',
+  title: 'Consignado CLT: o que é, como funciona e vale a pena?',
   excerpt: 'Consignado CLT: o que é, como funciona e vale a pena? O consignado CLT (também chamado de consignado privado) é um empréstimo em que as parcelas são d...',
-  category: 'sobre-nos',
+  category: 'credito',
   readTime: 5,
   publishedAt: '2025-01-16',
+  thumbnailUrl: '/images/blog/3.jpg',
   content: `<p><strong>Consignado CLT: o que é, como funciona e vale a pena?</strong></p>
 <p></p>
 <p>O <strong>consignado CLT</strong> (também chamado de <strong>consignado privado</strong>) é um empréstimo em que as parcelas são <strong>descontadas direto do salário</strong>, antes do dinheiro cair na conta. Por isso, costuma ter <strong>juros menores</strong> e contratação mais simples do que outras linhas de crédito.</p>

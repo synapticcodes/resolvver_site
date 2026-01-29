@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'planejamento-financeiro-para-iniciantes',
-  title: 'Planejamento Financeiro Para Iniciantes',
+  title: 'Como economizar nas contas do mês: 14 dicas simples para colocar na rotina',
   excerpt: 'Como economizar nas contas do mês: 14 dicas simples para colocar na rotina Está buscando maneiras práticas de reduzir as contas mensais e fazer o dinh...',
   category: 'conselhos-financeiros',
   readTime: 9,
   publishedAt: '2025-01-05',
+  thumbnailUrl: '/images/blog/14.webp',
   content: `<p><strong>Como economizar nas contas do mês: 14 dicas simples para colocar na rotina</strong></p>
 <p></p>
 <p>Está buscando maneiras práticas de <strong>reduzir as contas mensais</strong> e fazer o dinheiro render mais? Você não está sozinho: muita gente chega ao fim do mês com a sensação de que trabalhou muito e, mesmo assim, <strong>não sobra nada</strong>.</p>

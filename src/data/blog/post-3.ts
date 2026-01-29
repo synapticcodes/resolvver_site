@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'dicas-de-orcamento-pessoal',
-  title: 'Dicas de Orçamento Pessoal',
+  title: 'Dívida de água acompanha o imóvel? Entenda quem paga e como se proteger',
   excerpt: 'Dívida de água acompanha o imóvel? Entenda quem paga e como se proteger Alugar um imóvel (seja como inquilino ou proprietário) envolve cuidados que ev...',
   category: 'conselhos-financeiros',
   readTime: 7,
   publishedAt: '2025-01-03',
+  thumbnailUrl: '/images/blog/16.webp',
   content: `<p><strong>Dívida de água acompanha o imóvel? Entenda quem paga e como se proteger</strong></p>
 <p></p>
 <p>Alugar um imóvel (seja como <strong>inquilino</strong> ou <strong>proprietário</strong>) envolve cuidados que evitam dor de cabeça — e um dos mais comuns é descobrir que existem <strong>contas de água (ou luz) em atraso</strong> deixadas pelo ocupante anterior. A dúvida aparece na hora: <strong>essa dívida “fica no imóvel” ou é de quem usou?</strong></p>

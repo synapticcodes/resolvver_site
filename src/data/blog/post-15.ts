@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'recuperacao-de-credito',
-  title: 'Recuperação de Crédito',
+  title: 'Empréstimo consignado: benefícios e cuidados para evitar o superendividamento',
   excerpt: 'Empréstimo consignado: benefícios e cuidados para evitar o superendividamento O empréstimo consignado costuma ter juros menores e aprovação mais simpl...',
   category: 'credito',
   readTime: 10,
   publishedAt: '2025-01-15',
+  thumbnailUrl: '/images/blog/4.png',
   content: `<p><strong>Empréstimo consignado: benefícios e cuidados para evitar o superendividamento</strong></p>
 <p></p>
 <p>O <strong>empréstimo consignado</strong> costuma ter juros menores e aprovação mais simples porque as parcelas são <strong>descontadas automaticamente</strong> do salário ou benefício. Isso pode ser uma vantagem enorme — mas também pode virar um problema quando a pessoa contrata sem planejamento e compromete parte grande da renda por muitos meses.</p>

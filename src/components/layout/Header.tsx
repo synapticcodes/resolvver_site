@@ -14,12 +14,6 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-brand-sky/60 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
-      <div className="bg-brand-emerald text-white text-xs">
-        <Container className="py-0.5 flex items-center justify-center">
-          Recomende a um amigo e ganhe descontos na próxima negociação.
-        </Container>
-      </div>
-
       <Container>
         <div className="flex h-20 md:h-24 items-center justify-between">
           {/* Logo */}

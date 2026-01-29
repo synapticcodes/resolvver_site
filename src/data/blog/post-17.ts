@@ -2,12 +2,13 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'nossa-historia',
-  title: 'Nossa História',
-  excerpt: 'Empréstimo para negativado na hora: como solicitar com segurança (passo a passo) Estar com o nome negativado não significa que você ficou “sem saída”....',
-  category: 'sobre-nos',
+  title: 'Empréstimo para negativado na hora: como solicitar - passo a passo',
+  excerpt: 'Empréstimo para negativado na hora: como solicitar - passo a passo Estar com o nome negativado não significa que você ficou “sem saída”....',
+  category: 'credito',
   readTime: 6,
   publishedAt: '2025-01-17',
-  content: `<p><strong>Empréstimo para negativado na hora: como solicitar com segurança (passo a passo)</strong></p>
+  thumbnailUrl: '/images/blog/2.jpg',
+  content: `<p><strong>Empréstimo para negativado na hora: como solicitar - passo a passo</strong></p>
 <p></p>
 <p>Estar com o nome negativado não significa que você ficou “sem saída”. Existem, sim, opções de <strong>crédito para negativado</strong>— e algumas podem liberar o valor em minutos (geralmente via Pix) depois de aprovado. Mas é justamente a promessa de “liberação imediata” que também atrai muitos golpes.</p>
 <p>Neste guia, você vai entender:</p>

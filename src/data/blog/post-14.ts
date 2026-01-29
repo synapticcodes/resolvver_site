@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'como-negociar-taxas-de-juros',
-  title: 'Como Negociar Taxas de Juros',
+  title: 'Qual score é bom para financiamento?',
   excerpt: 'Qual score é bom para financiamento? Se você está pensando em financiar um carro, uma moto, um imóvel ou contratar qualquer crédito com prazo maior, é...',
   category: 'credito',
   readTime: 8,
   publishedAt: '2025-01-14',
+  thumbnailUrl: '/images/blog/5.png',
   content: `<p><strong>Qual score é bom para financiamento?</strong></p>
 <p></p>
 <p>Se você está pensando em financiar um carro, uma moto, um imóvel ou contratar qualquer crédito com prazo maior, é normal se perguntar: <strong>qual score é bom para financiamento?</strong></p>

@@ -8,7 +8,7 @@ export const homeContent = {
 
   howItWorks: {
     title: 'Como funciona?',
-    subtitle: 'Saia das dívidas mais rápido do que você imagina',
+    subtitle: 'Saia das dívidas mais rápido do que você imagina em 4 passos simples',
   },
 
   appTracking: {

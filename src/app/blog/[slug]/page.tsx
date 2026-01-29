@@ -43,8 +43,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   const categoryLabels = {
     'conselhos-financeiros': 'Conselhos Financeiros',
-    'credito': 'Crédito',
-    'sobre-nos': 'Sobre nós',
+    'credito': 'Créditos e Dívidas',
   }
 
   return (

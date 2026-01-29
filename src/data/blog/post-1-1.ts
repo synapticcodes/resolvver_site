@@ -7,6 +7,7 @@ export const post: BlogPost = {
   category: 'conselhos-financeiros',
   readTime: 8,
   publishedAt: '2025-01-01',
+  thumbnailUrl: '/images/blog/18.webp',
   content: `<p><strong>Cheque especial para pagar dívidas: vale a pena? Entenda os riscos e as alternativas</strong></p>
 <p></p>
 <p>Quando o orçamento aperta, muita gente enxerga o <strong>cheque especial</strong> como uma saída rápida: o saldo “negativo” aparece na conta e dá a impressão de que o problema foi resolvido. Só que, na prática, ele pode virar um <strong>atalho caro</strong> que prolonga (e até aumenta) a dívida.</p>

@@ -60,12 +60,6 @@ export default function PrivacyPage() {
             <p>
               Para questões sobre esta política de privacidade, entre em contato através do email contato@resolvver.com.br
             </p>
-
-            <div className="mt-12 p-6 bg-brand-sky/20 rounded-lg">
-              <p className="text-sm text-brand-slate">
-                <strong>Nota:</strong> Esta é uma política de privacidade simplificada. A política completa e detalhada será disponibilizada em breve.
-              </p>
-            </div>
           </div>
         </Container>
       </section>

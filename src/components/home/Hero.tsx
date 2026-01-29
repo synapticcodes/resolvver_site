@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
           <div className="max-w-xl">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-sky/60 text-brand-emerald text-xs font-semibold uppercase tracking-wider">
-              Novo programa de renegociação
+              UM PLANO PARA RESTAURAR SUA FINANÇAS
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl mt-6 mb-4 text-balance">
               {hero.headline}
@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-brand-slate">
               <div className="flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-brand-emerald"></span>
-                +600 mil clientes atendidos
+                Plano simples, feito para você.
               </div>
               <div className="flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-brand-emerald"></span>
@@ -62,7 +62,7 @@ export default function Hero() {
               <div className="absolute -inset-12 rounded-full border border-brand-emerald/10"></div>
               <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full border-[14px] border-brand-emerald/80 p-2 bg-white shadow-soft overflow-hidden">
                 <Image
-                  src="/images/photos/2.jpg"
+                  src="/images/photos/1.png.webp"
                   alt="Cliente Resolvver"
                   fill
                   className="object-cover"

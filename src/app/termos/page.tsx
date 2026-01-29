@@ -68,12 +68,6 @@ export default function TermsPage() {
             <p>
               Para questões sobre estes termos, entre em contato através do email contato@resolvver.com.br
             </p>
-
-            <div className="mt-12 p-6 bg-brand-sky/20 rounded-lg">
-              <p className="text-sm text-brand-slate">
-                <strong>Nota:</strong> Estes são termos de uso simplificados. Os termos completos e detalhados serão disponibilizados em breve.
-              </p>
-            </div>
           </div>
         </Container>
       </section>

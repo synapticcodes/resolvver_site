@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'investimentos-para-iniciantes',
-  title: 'Investimentos Para Iniciantes',
+  title: 'Empréstimo via Pix: por que virou alternativa ao cartão de crédito e quais cuidados tomar',
   excerpt: 'Empréstimo via Pix: por que virou alternativa ao cartão de crédito e quais cuidados tomar Nos últimos anos, o Pix deixou de ser apenas um meio de paga...',
-  category: 'conselhos-financeiros',
+  category: 'credito',
   readTime: 7,
   publishedAt: '2025-01-09',
+  thumbnailUrl: '/images/blog/10.webp',
   content: `<p><strong>Empréstimo via Pix: por que virou alternativa ao cartão de crédito e quais cuidados tomar</strong></p>
 <p></p>
 <p>Nos últimos anos, o Pix deixou de ser apenas um meio de pagamento e passou a aparecer também em soluções de crédito. Resultado: o chamado <strong>“empréstimo via Pix”</strong> vem crescendo porque entrega o que muita gente procura quando está apertado: <strong>dinheiro rápido na conta</strong>, com contratação mais simples e parcelas definidas desde o início.</p>
