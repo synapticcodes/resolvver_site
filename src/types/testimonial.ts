@@ -5,4 +5,5 @@ export interface Testimonial {
   state?: string
   quote: string
   rating?: number
+  avatarUrl?: string
 }
