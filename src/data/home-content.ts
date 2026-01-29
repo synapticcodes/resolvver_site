@@ -1,6 +1,6 @@
 export const homeContent = {
   hero: {
-    headline: 'UM PLANO PARA RESTAURAR SUAS FINANÇAS',
+    headline: 'Resolva suas dívidas de forma leve',
     subheadline: 'E ganhe fôlego para recomeçar.',
     primaryCta: 'Comece já',
     secondaryCta: 'Simule seu caso',
