@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'economize-dinheiro-no-dia-a-dia',
-  title: 'Economize Dinheiro no Dia a Dia',
+  title: 'Como fazer renda extra: mais de 50 ideias para ganhar dinheiro (online e offline)',
   excerpt: 'Como fazer renda extra: mais de 50 ideias para ganhar dinheiro (online e offline) Se você está precisando de uma grana a mais para fechar o mês, pagar...',
   category: 'conselhos-financeiros',
   readTime: 6,
   publishedAt: '2025-01-06',
+  thumbnailUrl: '/images/blog/13.jpg',
   content: `<p><strong>Como fazer renda extra: mais de 50 ideias para ganhar dinheiro (online e offline)</strong></p>
 <p></p>
 <p>Se você está precisando de uma grana a mais para <strong>fechar o mês</strong>, <strong>pagar dívidas</strong>, <strong>montar uma reserva</strong> ou até começar a investir, a renda extra pode ser o empurrão que faltava. A boa notícia é que dá para começar com pouco (às vezes, com <strong>zero investimento</strong>) — e ir crescendo conforme você ganha experiência e clientes.</p>

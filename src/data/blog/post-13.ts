@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'credito-consciente',
-  title: 'Crédito Consciente',
+  title: 'Como conseguir um cartão de crédito: o que influencia a análise e como aumentar suas chances',
   excerpt: 'Como conseguir um cartão de crédito: o que influencia a análise e como aumentar suas chances Conseguir um cartão de crédito pode parecer difícil quand...',
   category: 'credito',
   readTime: 6,
   publishedAt: '2025-01-13',
+  thumbnailUrl: '/images/blog/6.png',
   content: `<p><strong>Como conseguir um cartão de crédito: o que influencia a análise e como aumentar suas chances</strong></p>
 <p></p>
 <p>Conseguir um cartão de crédito pode parecer difícil quando a resposta é “não aprovado” — mas na maioria das vezes a análise segue critérios bem objetivos. Bancos e fintechs avaliam o risco de você não pagar a fatura e, com base nisso, decidem <strong>se aprovam</strong> e <strong>qual limite oferecem</strong>.</p>

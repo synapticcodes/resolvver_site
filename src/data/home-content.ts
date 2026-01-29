@@ -1,6 +1,6 @@
 export const homeContent = {
   hero: {
-    headline: 'Resolva suas dívidas de forma leve',
+    headline: 'UM PLANO PARA RESTAURAR SUAS FINANÇAS',
     subheadline: 'E ganhe fôlego para recomeçar.',
     primaryCta: 'Comece já',
     secondaryCta: 'Simule seu caso',
@@ -8,7 +8,7 @@ export const homeContent = {
 
   howItWorks: {
     title: 'Como funciona?',
-    subtitle: 'Saia das dívidas mais rápido do que você imagina',
+    subtitle: 'Saia das dívidas mais rápido do que você imagina em 4 passos simples',
   },
 
   appTracking: {

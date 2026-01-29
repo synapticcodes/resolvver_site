@@ -10,14 +10,12 @@ interface BlogCardProps {
 
 const categoryLabels = {
   'conselhos-financeiros': 'Conselhos Financeiros',
-  'credito': 'Crédito',
-  'sobre-nos': 'Sobre nós',
+  'credito': 'Créditos e Dívidas',
 }
 
 const categoryColors = {
   'conselhos-financeiros': 'bg-brand-sky/60 text-brand-emerald',
   'credito': 'bg-brand-sky/60 text-brand-emerald',
-  'sobre-nos': 'bg-brand-sky/60 text-brand-emerald',
 }
 
 const cardImages = [

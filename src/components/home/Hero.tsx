@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-brand-slate">
               <div className="flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-brand-emerald"></span>
-                +600 mil clientes atendidos
+                Plano simples, feito para você.
               </div>
               <div className="flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-brand-emerald"></span>

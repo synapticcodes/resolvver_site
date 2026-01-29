@@ -154,7 +154,7 @@ export default function LeadForm() {
           className={`w-full px-4 py-3 rounded-xl border ${
             errors.phone ? 'border-red-500' : 'border-brand-emerald/40'
           } focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald`}
-          placeholder="(11) 98765-4321"
+          placeholder="(xx) xxxxx-xxxx"
         />
         {errors.phone && (
           <p className="mt-1 text-sm text-red-500">{errors.phone}</p>

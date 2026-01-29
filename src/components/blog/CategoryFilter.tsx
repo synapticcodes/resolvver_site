@@ -11,8 +11,7 @@ interface CategoryFilterProps {
 const categories = [
   { id: 'todos', label: 'Todos os Artigos' },
   { id: 'conselhos-financeiros', label: 'Conselhos Financeiros' },
-  { id: 'credito', label: 'Crédito' },
-  { id: 'sobre-nos', label: 'Sobre nós' },
+  { id: 'credito', label: 'Créditos e Dívidas' },
 ] as const
 
 export default function CategoryFilter({ selectedCategory, onCategoryChange }: CategoryFilterProps) {

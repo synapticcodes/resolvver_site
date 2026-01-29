@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'como-melhorar-seu-score-de-credito',
-  title: 'Como Melhorar Seu Score de Crédito',
+  title: 'IMEI: como bloquear um celular roubado ou perdido de forma rápida e segura',
   excerpt: 'IMEI: como bloquear um celular roubado ou perdido de forma rápida e segura Teve o celular roubado, furtado ou perdeu o aparelho? Uma das medidas mais ...',
-  category: 'credito',
+  category: 'conselhos-financeiros',
   readTime: 8,
   publishedAt: '2025-01-10',
+  thumbnailUrl: '/images/blog/9.jpeg',
   content: `<p><strong>IMEI: como bloquear um celular roubado ou perdido de forma rápida e segura</strong></p>
 <p></p>
 <p>Teve o celular roubado, furtado ou perdeu o aparelho? Uma das medidas mais eficazes é <strong>bloquear o IMEI</strong>, o que impede que o dispositivo volte a funcionar nas redes móveis do Brasil — <strong>mesmo que coloquem outro chip</strong>. </p>

@@ -2,12 +2,13 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'como-sair-das-dividas',
-  title: 'Como Sair das Dívidas',
-  excerpt: 'FGTS: como funciona o Saque-Aniversário (quem pode, valores, vantagens e riscos) O Saque-Aniversário é uma modalidade do FGTS em que o trabalhador pod...',
+  title: 'FGTS: como funciona o Saque-Aniversário',
+  excerpt: 'FGTS: como funciona o Saque-Aniversário O Saque-Aniversário é uma modalidade do FGTS em que o trabalhador pod...',
   category: 'conselhos-financeiros',
   readTime: 10,
   publishedAt: '2025-01-07',
-  content: `<p><strong>FGTS: como funciona o Saque-Aniversário (quem pode, valores, vantagens e riscos)</strong></p>
+  thumbnailUrl: '/images/blog/12.jpg',
+  content: `<p><strong>FGTS: como funciona o Saque-Aniversário</strong></p>
 <p></p>
 <p>O <strong>Saque-Aniversário</strong> é uma modalidade do FGTS em que o trabalhador pode retirar, <strong>uma vez por ano</strong>, uma <strong>parte</strong> do saldo disponível no fundo, sempre no período do seu aniversário. Em compensação, ele <strong>abre mão do saque integral do FGTS</strong> em caso de demissão sem justa causa (mantendo apenas a <strong>multa rescisória de 40%</strong>). </p>
 <p>A seguir, você entende como funciona na prática, quanto dá para sacar, como aderir e quando essa escolha pode (ou não) fazer sentido.</p>

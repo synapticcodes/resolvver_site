@@ -6,17 +6,16 @@ export const siteConfig = {
   links: {
     facebook: 'https://facebook.com/resolvver',
     instagram: 'https://instagram.com/resolvver',
-    linkedin: 'https://linkedin.com/company/resolvver',
   },
   contact: {
     email: 'contato@resolvver.com.br',
-    phone: '(11) 3000-0000',
+    phone: '(11) 99999-9999',
+    whatsapp: '(11) 99999-9999',
   },
   navigation: [
     { name: 'Home', href: '/' },
-    { name: 'Sobre', href: '/sobre' },
-    { name: 'FAQ', href: '/faq' },
-    { name: 'Simule seu caso', href: '/simule-seu-caso' },
+    { name: 'Sobre a Resolvver', href: '/sobre' },
+    { name: 'Dúvidas Frequentes', href: '/faq' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contato', href: '/contato' },
   ],

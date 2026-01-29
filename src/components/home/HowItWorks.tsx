@@ -24,7 +24,6 @@ export default function HowItWorks() {
                 <div className="w-12 h-12 rounded-full bg-brand-emerald/15 text-brand-emerald flex items-center justify-center text-lg font-semibold">
                   {index + 1}
                 </div>
-                <span className="text-xs uppercase tracking-wider text-brand-slate">Passo {index + 1}</span>
               </div>
               <h3 className="text-lg font-semibold text-brand-navy mb-3">
                 {step.title}

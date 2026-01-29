@@ -2,12 +2,13 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'missao-e-valores',
-  title: 'Missão e Valores',
-  excerpt: 'Empréstimo para MEI negativado: conheça as opções e como conseguir (com segurança) Ter MEI (Microempreendedor Individual) abre portas: CNPJ, emissão d...',
-  category: 'sobre-nos',
+  title: 'Empréstimo para MEI negativado: conheça as opções e como conseguir com segurança',
+  excerpt: 'Empréstimo para MEI negativado: conheça as opções e como conseguir com segurança Ter MEI (Microempreendedor Individual) abre portas: CNPJ, emissão d...',
+  category: 'credito',
   readTime: 5,
   publishedAt: '2025-01-18',
-  content: `<p><strong>Empréstimo para MEI negativado: conheça as opções e como conseguir (com segurança)</strong></p>
+  thumbnailUrl: '/images/blog/1.webp',
+  content: `<p><strong>Empréstimo para MEI negativado: conheça as opções e como conseguir com segurança</strong></p>
 <p></p>
 <p>Ter MEI (Microempreendedor Individual) abre portas: CNPJ, emissão de nota, conta PJ e acesso a produtos financeiros. Mas quando o MEI está negativado, conseguir crédito pode ficar mais difícil — principalmente em bancos tradicionais.</p>
 <p>A boa notícia é que <strong>existem alternativas</strong>. O segredo é escolher a opção certa para seu caso, comparar custos (CET) e fugir de golpes comuns que miram quem está com pressa.</p>

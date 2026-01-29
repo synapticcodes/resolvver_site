@@ -2,11 +2,12 @@ import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
   slug: 'como-funciona-nossa-metodologia',
-  title: 'Como Funciona Nossa Metodologia',
+  title: 'Herdeiro com dívidas pode renunciar à herança? Entenda como funciona',
   excerpt: 'Herdeiro com dívidas pode renunciar à herança? Entenda como funciona Perder alguém da família já é um momento difícil — e, junto com o luto, costumam ...',
-  category: 'sobre-nos',
+  category: 'conselhos-financeiros',
   readTime: 6,
   publishedAt: '2025-01-04',
+  thumbnailUrl: '/images/blog/15.jpeg',
   content: `<p><strong>Herdeiro com dívidas pode renunciar à herança? Entenda como funciona</strong></p>
 <p></p>
 <p>Perder alguém da família já é um momento difícil — e, junto com o luto, costumam surgir dúvidas práticas sobre <strong>inventário, herança e dívidas</strong>. Uma das perguntas mais comuns é: <strong>se o herdeiro tem dívidas, ele pode abrir mão da herança?</strong> E, ainda: <strong>o que acontece com as dívidas do falecido nesse cenário?</strong></p>

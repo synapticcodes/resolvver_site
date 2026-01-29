@@ -15,13 +15,13 @@ export default function SimulatePage() {
         <Container size="small">
           <div className="text-center mb-10">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-sky/60 text-brand-emerald text-xs font-semibold uppercase tracking-wider">
-              Simule seu programa
+              SIMULE SEU CASO
             </span>
             <h1 className="text-4xl md:text-5xl font-semibold mt-6 mb-4 text-balance text-brand-navy">
               Liquidamos suas dívidas com até 90% de desconto
             </h1>
             <p className="text-lg md:text-xl text-brand-slate">
-              Descubra quanto você poderia pagar com nosso simulador.
+              Descubra quanto você pode economizar com nosso simulador.
             </p>
           </div>
 

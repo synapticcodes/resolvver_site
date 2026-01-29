@@ -1,4 +1,4 @@
-export type BlogCategory = 'conselhos-financeiros' | 'credito' | 'sobre-nos'
+export type BlogCategory = 'conselhos-financeiros' | 'credito'
 
 export interface BlogPost {
   slug: string

@@ -55,11 +55,11 @@ export default function AboutPage() {
                 {aboutContent.story.title}
               </h2>
               {aboutContent.story.body.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="text-brand-sky/80 leading-relaxed mb-4">
+                <p key={index} className="text-brand-sky/80 leading-relaxed mb-3">
                   {paragraph}
                 </p>
               ))}
-              <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-2xl border border-white/10">
+              <div className="relative mt-6 aspect-[4/3] overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src={aboutContent.story.image}
                   alt="Time Resolvver"
