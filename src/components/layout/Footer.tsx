@@ -18,7 +18,7 @@ export default function Footer() {
                 alt="Resolvver"
                 width={260}
                 height={174}
-                className="h-16 w-auto md:h-20"
+                className="h-28 w-auto md:h-40"
               />
             </Link>
             <p className="text-brand-sky/80 text-sm leading-relaxed mb-4">
