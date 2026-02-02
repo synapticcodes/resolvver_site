@@ -27,7 +27,7 @@ export default function PrivacyPage() {
           <div className="prose prose-lg max-w-none">
             <h2>1. Coleta de Informações</h2>
             <p>
-              A Resolvver coleta informações pessoais quando você utiliza nossos serviços, incluindo nome, email, telefone e informações sobre suas dívidas.
+              A Resolvver coleta informações pessoais quando você utiliza nossos serviços, incluindo nome, email e informações sobre suas dívidas.
             </p>
 
             <h2>2. Uso das Informações</h2>

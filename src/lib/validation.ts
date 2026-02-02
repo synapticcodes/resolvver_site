@@ -9,12 +9,6 @@ export const leadFormSchema = z.object({
     .email('Email inválido')
     .toLowerCase(),
 
-  phone: z.string()
-    .regex(
-      /^\(?([0-9]{2})\)?[-. ]?([0-9]{4,5})[-. ]?([0-9]{4})$/,
-      'Telefone inválido. Use o formato (XX) XXXXX-XXXX'
-    ),
-
   debtAmount: z.string().optional(),
 
   message: z.string()

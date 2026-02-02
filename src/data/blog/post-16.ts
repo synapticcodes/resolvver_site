@@ -103,6 +103,6 @@ Depende da política do banco, mas a modalidade tende a ser mais acessível que 
 <p><strong>Onde eu comparo taxas?</strong><br />
 O Banco Central divulga estatísticas de taxas por modalidade, incluindo consignado privado. </p>
 <p><strong>Conclusão</strong></p>
-<p>O <strong>consignado CLT</strong> pode valer a pena quando você usa para reduzir juros e organizar a vida financeira — e não para sustentar um mês apertado. Como existe desconto automático e margem de até <strong>35%</strong>, o principal cuidado é garantir que a parcela <strong>cabe no seu orçamento com folg</strong></p>
+<p>O <strong>consignado CLT</strong> pode valer a pena quando você usa para reduzir juros e organizar a vida financeira — e não para sustentar um mês apertado. Como existe desconto automático e margem de até <strong>35%</strong>, o principal cuidado é garantir que a parcela <strong>cabe no seu orçamento com folga</strong>.</p>
 `,
 }

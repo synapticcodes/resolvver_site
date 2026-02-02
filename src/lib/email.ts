@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 })
 
 export async function sendLeadEmail(data: LeadFormData) {
-  const { name, email, phone, debtAmount, message } = data
+  const { name, email, debtAmount, message } = data
 
   const htmlContent = `
     <!DOCTYPE html>
@@ -42,10 +42,6 @@ export async function sendLeadEmail(data: LeadFormData) {
             <div class="field">
               <div class="label">Email:</div>
               <div class="value">${email}</div>
-            </div>
-            <div class="field">
-              <div class="label">Telefone:</div>
-              <div class="value">${phone}</div>
             </div>
             ${debtAmount ? `
               <div class="field">
@@ -78,7 +74,6 @@ Novo Lead - Resolvver
 
 Nome: ${name}
 Email: ${email}
-Telefone: ${phone}
 ${debtAmount ? `Valor da Dívida: ${debtAmount}` : ''}
 ${message ? `Mensagem: ${message}` : ''}
     `,

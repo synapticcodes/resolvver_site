@@ -3,7 +3,6 @@ export const homeContent = {
     headline: 'Resolva suas dívidas de forma leve',
     subheadline: 'E ganhe fôlego para recomeçar.',
     primaryCta: 'Comece já',
-    secondaryCta: 'Simule seu caso',
   },
 
   howItWorks: {

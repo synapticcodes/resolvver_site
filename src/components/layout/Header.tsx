@@ -15,15 +15,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-brand-sky/60 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <Container>
-        <div className="flex h-20 md:h-24 items-center justify-between">
+        <div className="flex h-28 md:h-32 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/images/logo-header.png"
+              src="/images/n.png"
               alt="Resolvver"
               width={420}
               height={274}
-              className="h-24 w-auto md:h-28"
+              className="h-28 w-auto md:h-32"
               priority
             />
           </Link>
