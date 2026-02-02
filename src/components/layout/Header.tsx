@@ -23,7 +23,7 @@ export default function Header() {
               alt="Resolvver"
               width={420}
               height={274}
-              className="h-28 w-auto md:h-32"
+              className="h-32 w-auto md:h-36"
               priority
             />
           </Link>
