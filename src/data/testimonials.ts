@@ -7,6 +7,7 @@ export const testimonials: Testimonial[] = [
     city: 'Salvador',
     state: 'BA',
     quote: 'Eles conseguiram resolver todas as minhas dívidas. Recebi todo suporte e foi tudo transparente do início ao fim.',
+    avatarUrl: '/images/testimonials/woman-01.webp',
   },
   {
     id: '2',
@@ -14,6 +15,7 @@ export const testimonials: Testimonial[] = [
     city: 'Caucaia',
     state: 'CE',
     quote: 'Eu consegui limpar o nome e isso mudou completamente minha tranquilidade.',
+    avatarUrl: '/images/testimonials/man-01.webp',
   },
   {
     id: '3',
@@ -21,6 +23,7 @@ export const testimonials: Testimonial[] = [
     city: 'Aparecida de Goiânia',
     state: 'GO',
     quote: 'O que mais gostei foi a clareza: eu sabia exatamente o que estava acontecendo em cada etapa.',
+    avatarUrl: '/images/testimonials/woman-02.webp',
   },
   {
     id: '4',
@@ -28,6 +31,7 @@ export const testimonials: Testimonial[] = [
     city: 'Parnamirim',
     state: 'RN',
     quote: 'Consegui recuperar meu crédito aos poucos e voltei a fazer planos sem preocupação.',
+    avatarUrl: '/images/testimonials/man-02.webp',
   },
   {
     id: '5',
@@ -35,6 +39,7 @@ export const testimonials: Testimonial[] = [
     city: 'Porto Alegre',
     state: 'RS',
     quote: 'Meu mês deixou de ser sufoco. Consegui 85% de desconto na minha dívida e recuperar meu crédito.',
+    avatarUrl: '/images/testimonials/woman-03.webp',
   },
   {
     id: '6',
@@ -42,6 +47,7 @@ export const testimonials: Testimonial[] = [
     city: 'Belo Horizonte',
     state: 'MG',
     quote: 'Eu senti que minha vida financeira foi restaurada. O atendimento é humano e honesto.',
+    avatarUrl: '/images/testimonials/man-03.webp',
   },
   {
     id: '7',
@@ -49,6 +55,7 @@ export const testimonials: Testimonial[] = [
     city: 'São João de Meriti',
     state: 'RJ',
     quote: 'Minhas dívidas reduziram cerca de 70% e eu finalmente consegui respirar.',
+    avatarUrl: '/images/testimonials/woman-04.webp',
   },
   {
     id: '8',
@@ -56,6 +63,7 @@ export const testimonials: Testimonial[] = [
     city: 'São José',
     state: 'SC',
     quote: 'A parcela mensal que era descontada direto do meu benefício caiu aproximadamente 80%, e voltou a sobrar dinheiro no fim do mês.',
+    avatarUrl: '/images/testimonials/man-04.webp',
   },
   {
     id: '9',
@@ -63,6 +71,7 @@ export const testimonials: Testimonial[] = [
     city: 'Paço do Lumiar',
     state: 'MA',
     quote: 'Antes faltava dinheiro no fim do mês, mas agora, com prazo e valor pequeno para pagar, ganhei a chance de me reorganizar.',
+    avatarUrl: '/images/testimonials/man-05.webp',
   },
   {
     id: '10',
@@ -70,6 +79,7 @@ export const testimonials: Testimonial[] = [
     city: 'Recife',
     state: 'PE',
     quote: 'Consegui reduzir minha dívida em mais de 60% e passei a pagar parcelas que cabem no meu orçamento. Hoje sei que estou no caminho certo.',
+    avatarUrl: '/images/testimonials/woman-05.webp',
   },
   {
     id: '11',
@@ -77,6 +87,7 @@ export const testimonials: Testimonial[] = [
     city: 'Jaboatão dos Guararapes',
     state: 'PE',
     quote: 'Eu já tinha tentado renegociar sozinha e não consegui. Com o suporte certo, tudo ficou claro e hoje minhas finanças estão organizadas.',
+    avatarUrl: '/images/testimonials/woman-06.webp',
   },
   {
     id: '12',
@@ -84,6 +95,7 @@ export const testimonials: Testimonial[] = [
     city: 'Betim',
     state: 'MG',
     quote: 'Eu achava que não ia sair daquela situação. Hoje minha vida financeira está no lugar e eu durmo em paz.',
+    avatarUrl: '/images/testimonials/man-06.webp',
   },
   {
     id: '13',
@@ -91,6 +103,7 @@ export const testimonials: Testimonial[] = [
     city: 'Camaçari',
     state: 'BA',
     quote: 'Eu tinha medo de cair em promessa vazia, mas tudo foi explicado com clareza e me senti segura do começo ao fim.',
+    avatarUrl: '/images/testimonials/woman-07.webp',
   },
   {
     id: '14',
@@ -98,6 +111,7 @@ export const testimonials: Testimonial[] = [
     city: 'Atibaia',
     state: 'SP',
     quote: 'Meu nome estava sujo e isso me travava, mas decidi confiar. Consegui limpar o nome e recomeçar.',
+    avatarUrl: '/images/testimonials/man-07.webp',
   },
   {
     id: '15',
@@ -105,6 +119,7 @@ export const testimonials: Testimonial[] = [
     city: 'Gravataí',
     state: 'RS',
     quote: 'Eu sentia vergonha das minhas dívidas. Fui tratada com respeito e consegui recuperar minha dignidade financeira.',
+    avatarUrl: '/images/testimonials/woman-08.webp',
   },
   {
     id: '16',
@@ -112,6 +127,7 @@ export const testimonials: Testimonial[] = [
     city: 'Campinas',
     state: 'SP',
     quote: 'Eles são excelentes em negociar dívidas e ajudam a melhorar o histórico financeiro. Recomendo muito.',
+    avatarUrl: '/images/testimonials/man-08.webp',
   },
   {
     id: '17',
@@ -119,6 +135,7 @@ export const testimonials: Testimonial[] = [
     city: 'Nova Iguaçu',
     state: 'RJ',
     quote: 'Eu me sentia perdida com várias dívidas. Agora está tudo reunido em um plano e ficou muito mais leve.',
+    avatarUrl: '/images/testimonials/woman-09.webp',
   },
   {
     id: '18',
@@ -126,6 +143,7 @@ export const testimonials: Testimonial[] = [
     city: 'Natal',
     state: 'RN',
     quote: 'Eu já não acreditava que meu crédito voltaria, mas eles conseguiram um acordo que parecia impossível.',
+    avatarUrl: '/images/testimonials/man-09.webp',
   },
   {
     id: '19',
@@ -133,6 +151,7 @@ export const testimonials: Testimonial[] = [
     city: 'Cambé',
     state: 'PR',
     quote: 'Antes era só preocupação e cobrança. Hoje tenho clareza, acompanhamento e uma solução de verdade.',
+    avatarUrl: '/images/testimonials/woman-10.webp',
   },
   {
     id: '20',
@@ -140,6 +159,7 @@ export const testimonials: Testimonial[] = [
     city: 'São Paulo',
     state: 'SP',
     quote: 'Eu sempre achei que renegociação fosse enrolação, mas aqui tudo foi objetivo. Resolvi minhas dívidas e voltei a ter controle.',
+    avatarUrl: '/images/testimonials/man-10.webp',
   },
   {
     id: '21',
@@ -147,5 +167,6 @@ export const testimonials: Testimonial[] = [
     city: 'Pelotas',
     state: 'RS',
     quote: 'Depois de anos fazendo uma dívida para pagar a outra, finalmente encontrei ajuda. Hoje estou livre das dívidas.',
+    avatarUrl: '/images/testimonials/woman-11.webp',
   },
 ]

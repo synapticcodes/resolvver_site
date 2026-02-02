@@ -34,12 +34,20 @@ export async function generateMetadata({
   }
 }
 
+const stripLeadingTitle = (content: string, title: string) => {
+  const escapedTitle = title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const titlePattern = new RegExp(`^<p><strong>${escapedTitle}[^<]*</strong></p>\\s*`, 'i')
+  return content.replace(titlePattern, '')
+}
+
 export default function BlogPostPage({ params }: BlogPostPageProps) {
   const post = getPostBySlug(params.slug)
 
   if (!post) {
     notFound()
   }
+
+  const cleanedContent = stripLeadingTitle(post.content, post.title)
 
   const categoryLabels = {
     'conselhos-financeiros': 'Conselhos Financeiros',
@@ -93,7 +101,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           {/* Article Content */}
           <div
             className="prose prose-lg max-w-none prose-headings:text-brand-navy prose-p:text-brand-slate prose-a:text-brand-emerald prose-strong:text-brand-navy prose-li:text-brand-slate"
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: cleanedContent }}
           />
         </Container>
       </article>

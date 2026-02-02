@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import Container from '@/components/ui/Container'
 import Card from '@/components/ui/Card'
 import { homeContent } from '@/data/home-content'
@@ -49,13 +50,26 @@ export default function Testimonials() {
               <p className="text-brand-slate mb-4 leading-relaxed">
                 "{testimonial.quote}"
               </p>
-              <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-brand-navy">
-                  {testimonial.name}
-                </p>
-                <p className="text-sm text-brand-slate">
-                  {testimonial.city}/{testimonial.state}
-                </p>
+              <div className="border-t border-gray-200 pt-4 flex items-center gap-3">
+                <div className="relative h-12 w-12 overflow-hidden rounded-full border border-brand-sky/70 bg-brand-sky/40">
+                  {testimonial.avatarUrl && (
+                    <Image
+                      src={testimonial.avatarUrl}
+                      alt={`Foto de ${testimonial.name}`}
+                      fill
+                      className="object-cover"
+                      sizes="48px"
+                    />
+                  )}
+                </div>
+                <div>
+                  <p className="font-semibold text-brand-navy">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-sm text-brand-slate">
+                    {testimonial.city}/{testimonial.state}
+                  </p>
+                </div>
               </div>
             </Card>
           ))}

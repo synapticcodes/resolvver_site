@@ -1,7 +1,6 @@
 export interface LeadFormData {
   name: string
   email: string
-  phone: string
   debtAmount?: string
   message?: string
   consent: boolean

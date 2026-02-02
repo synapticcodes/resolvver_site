@@ -40,7 +40,7 @@ export default function BlogPage() {
                 <div className="absolute -inset-4 rounded-3xl border border-brand-emerald/20"></div>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-soft border border-brand-sky/70 bg-white">
                   <Image
-                    src="/images/photos/2.jpg"
+                    src="/images/photos/A.jpg"
                     alt="Equipe Resolvver"
                     fill
                     className="object-cover"

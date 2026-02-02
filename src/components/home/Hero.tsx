@@ -30,14 +30,6 @@ export default function Hero() {
               <Button href="/simule-seu-caso" size="lg">
                 {hero.primaryCta}
               </Button>
-              <Button
-                href="/simule-seu-caso"
-                variant="outline"
-                size="lg"
-                className="border-brand-emerald/70 text-brand-emerald"
-              >
-                {hero.secondaryCta}
-              </Button>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-brand-slate">
@@ -60,13 +52,13 @@ export default function Hero() {
             <div className="relative float-slow">
               <div className="absolute -inset-6 rounded-full border border-brand-emerald/30"></div>
               <div className="absolute -inset-12 rounded-full border border-brand-emerald/10"></div>
-              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full border-[14px] border-brand-emerald/80 p-2 bg-white shadow-soft overflow-hidden">
+              <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full border-[14px] border-brand-emerald/80 p-2 bg-white shadow-soft overflow-hidden">
                 <Image
                   src="/images/photos/1.png.webp"
                   alt="Cliente Resolvver"
                   fill
                   className="object-cover"
-                  sizes="(min-width: 1024px) 320px, 260px"
+                  sizes="(min-width: 1024px) 384px, 320px"
                   priority
                 />
               </div>

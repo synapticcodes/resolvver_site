@@ -18,13 +18,6 @@ export default function MediaSection() {
             {media.subtitle}
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-brand-slate">
-            {['Imprensa', 'Educação financeira', 'Histórias reais', 'Cases de sucesso'].map((item) => (
-              <span key={item} className="px-4 py-2 rounded-full border border-brand-sky/80 bg-white">
-                {item}
-              </span>
-            ))}
-          </div>
         </div>
       </Container>
     </section>

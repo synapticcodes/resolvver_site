@@ -10,7 +10,6 @@ export default function LeadForm() {
   const [formData, setFormData] = useState<Partial<LeadFormData>>({
     name: '',
     email: '',
-    phone: '',
     debtAmount: '',
     message: '',
     consent: false,
@@ -69,7 +68,6 @@ export default function LeadForm() {
         setFormData({
           name: '',
           email: '',
-          phone: '',
           debtAmount: '',
           message: '',
           consent: false,
@@ -137,27 +135,6 @@ export default function LeadForm() {
         />
         {errors.email && (
           <p className="mt-1 text-sm text-red-500">{errors.email}</p>
-        )}
-      </div>
-
-      {/* Phone */}
-      <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-brand-navy mb-2">
-          Telefone/WhatsApp *
-        </label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          className={`w-full px-4 py-3 rounded-xl border ${
-            errors.phone ? 'border-red-500' : 'border-brand-emerald/40'
-          } focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald`}
-          placeholder="(xx) xxxxx-xxxx"
-        />
-        {errors.phone && (
-          <p className="mt-1 text-sm text-red-500">{errors.phone}</p>
         )}
       </div>
 
