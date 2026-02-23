@@ -8,7 +8,7 @@ export const siteConfig = {
     instagram: 'https://instagram.com/resolvver',
   },
   contact: {
-    email: 'contato@resolvver.com.br',
+    email: 'contato@resolvver.com',
     phone: '(11) 99999-9999',
     whatsapp: '(11) 99999-9999',
   },

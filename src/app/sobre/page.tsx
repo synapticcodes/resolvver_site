@@ -5,7 +5,7 @@ import { aboutContent } from '@/data/about-content'
 
 export const metadata: Metadata = {
   title: 'Sobre',
-  description: 'Conheça a Resolvver, empresa especializada em bem-estar financeiro que ajuda mais de 185 mil pessoas por ano.',
+  description: 'Conheça a Resolvver, empresa especializada em bem-estar financeiro que ajuda mais de 80 mil pessoas por ano.',
 }
 
 export default function AboutPage() {
