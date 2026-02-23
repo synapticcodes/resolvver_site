@@ -7,7 +7,7 @@ export const aboutContent = {
 
   story: {
     title: 'Resolvver nasceu em 2011 para transformar a relação das pessoas com as dívidas',
-    body: `A Resolvver atua no bem-estar financeiro e ajuda, todos os anos, mais de 185 mil pessoas a tomar melhores decisões.
+    body: `A Resolvver atua no bem-estar financeiro e ajuda, todos os anos, mais de 80 mil pessoas a tomar melhores decisões.
 
 O nosso atendimento é humano, discreto e fácil de entender. Analisamos sua situação, explicamos as possibilidades de renegociação em linguagem simples e conduzimos o processo com especialistas em finanças e direito do consumidor.
 
@@ -41,7 +41,7 @@ Aqui, a prioridade é clareza e segurança: você entende o que está sendo feit
   ],
 
   stat: {
-    value: 'Mais de 185 mil',
+    value: 'Mais de 80 mil',
     label: 'pessoas atendidas por ano',
   },
 }

@@ -12,6 +12,6 @@ export const stats = [
   {
     id: 'liquidated',
     value: '+R$1bi',
-    label: 'em dívidas liquidadas',
+    label: 'em dívidas renegociadas',
   },
 ]
