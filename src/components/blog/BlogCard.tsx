@@ -21,9 +21,9 @@ const categoryColors = {
 const cardImages = [
   '/images/photos/1.png.webp',
   '/images/photos/2.jpg',
-  '/images/photos/3.jpg',
+  '/images/photos/3-optimized.webp',
   '/images/photos/4.jpg',
-  '/images/photos/5.jpg',
+  '/images/photos/5-optimized.webp',
 ]
 
 export default function BlogCard({ post, index = 0 }: BlogCardProps) {

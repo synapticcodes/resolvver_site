@@ -13,6 +13,7 @@ export default function LeadForm() {
     debtAmount: '',
     message: '',
     consent: false,
+    website: '',
   })
 
   const [errors, setErrors] = useState<Record<string, string>>({})
@@ -71,6 +72,7 @@ export default function LeadForm() {
           debtAmount: '',
           message: '',
           consent: false,
+          website: '',
         })
       } else {
         setSubmitStatus('error')
@@ -175,6 +177,19 @@ export default function LeadForm() {
         {errors.message && (
           <p className="mt-1 text-sm text-red-500">{errors.message}</p>
         )}
+      </div>
+
+      <div className="sr-only" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          value={formData.website || ''}
+          onChange={handleChange}
+          autoComplete="off"
+          tabIndex={-1}
+        />
       </div>
 
       {/* Consent */}

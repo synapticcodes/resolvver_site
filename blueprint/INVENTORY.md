@@ -10,19 +10,21 @@
 ├─ public/
 │  ├─ favicon-32x32.png
 │  ├─ favicon-48x48.png
+│  ├─ og-image.jpg
 │  └─ images/
-│     ├─ logo-header.png
-│     ├─ logo-footer.png
-│     ├─ logo.png
-│     ├─ logo-cropped.png
-│     ├─ app-resolvver-mock.png
+│     ├─ n-optimized.webp
+│     ├─ logo-branco-optimized.webp
+│     ├─ app-resolvver-mock-optimized.webp
 │     ├─ selo-procon.png
 │     ├─ photos/
 │     │  ├─ 1.png.webp
 │     │  ├─ 2.jpg
-│     │  ├─ 3.jpg
+│     │  ├─ 3-optimized.webp
 │     │  ├─ 4.jpg
-│     │  └─ 5.jpg
+│     │  ├─ 5-optimized.webp
+│     │  └─ A.jpg
+│     ├─ blog/ (1.webp ... 18.webp/.jpg/.png/.jpeg)
+│     ├─ testimonials/ (*.webp)
 │     └─ partners/ (N1.png ... N44.png)
 ├─ src/
 │  ├─ app/
@@ -91,10 +93,10 @@
   - Status: **Pronto**, porém precisa de atualização de títulos/miniaturas conforme correções
 
 - Assets/Content
-  - `public/images/*` (logos, fotos, parceiros)
+  - `public/images/*` (assets ativos do site)
   - `projeto_docs/Correcoes site /Fotos b log` (novas fotos do blog)
   - `projeto_docs/Correcoes site /3f3049d0-f8fe-4355-b82e-36a9e1c541e3 2.png` (imagem citada em correções)
-  - Status: **Incompleto** (necessário alinhar quais assets substituem quais imagens atuais)
+  - Status: **Organizado** (ativos otimizados e originais removidos do projeto)
 
 - Infra/DevOps
   - `netlify.toml`, `package.json`

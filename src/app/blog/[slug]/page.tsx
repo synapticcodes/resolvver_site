@@ -10,9 +10,9 @@ import {
 import { siteConfig } from '@/config/site'
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 const categoryLabels = {
@@ -30,7 +30,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
-  const canonicalSlug = getCanonicalSlugByLegacySlug(params.slug) ?? params.slug
+  const resolvedParams = await params
+  const canonicalSlug = getCanonicalSlugByLegacySlug(resolvedParams.slug) ?? resolvedParams.slug
   const post = getPostBySlug(canonicalSlug)
 
   if (!post) {
@@ -75,14 +76,15 @@ const stripLeadingTitle = (content: string, title: string) => {
   return content.replace(titlePattern, '')
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const canonicalSlug = getCanonicalSlugByLegacySlug(params.slug)
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const resolvedParams = await params
+  const canonicalSlug = getCanonicalSlugByLegacySlug(resolvedParams.slug)
 
   if (canonicalSlug) {
     permanentRedirect(`/blog/${canonicalSlug}`)
   }
 
-  const post = getPostBySlug(params.slug)
+  const post = getPostBySlug(resolvedParams.slug)
 
   if (!post) {
     notFound()

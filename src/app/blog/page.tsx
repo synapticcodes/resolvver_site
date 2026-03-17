@@ -9,9 +9,9 @@ import type { BlogCategory } from '@/types/blog'
 import { siteConfig } from '@/config/site'
 
 interface BlogPageProps {
-  searchParams?: {
+  searchParams?: Promise<{
     categoria?: string
-  }
+  }>
 }
 
 const isValidCategory = (value?: string): value is BlogCategory =>
@@ -34,8 +34,9 @@ const categoryMetadataMap: Record<BlogCategory, {
 export async function generateMetadata({
   searchParams,
 }: BlogPageProps): Promise<Metadata> {
-  const selectedCategory = isValidCategory(searchParams?.categoria)
-    ? searchParams.categoria
+  const resolvedSearchParams = await searchParams
+  const selectedCategory = isValidCategory(resolvedSearchParams?.categoria)
+    ? resolvedSearchParams.categoria
     : undefined
 
   const categoryMetadata = selectedCategory
@@ -79,9 +80,10 @@ export async function generateMetadata({
   }
 }
 
-export default function BlogPage({ searchParams }: BlogPageProps) {
-  const selectedCategory = isValidCategory(searchParams?.categoria)
-    ? searchParams.categoria
+export default async function BlogPage({ searchParams }: BlogPageProps) {
+  const resolvedSearchParams = await searchParams
+  const selectedCategory = isValidCategory(resolvedSearchParams?.categoria)
+    ? resolvedSearchParams.categoria
     : 'todos'
 
   const filteredPosts =
@@ -167,7 +169,7 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
 
               <div className="relative h-56 md:h-64 rounded-2xl overflow-hidden border border-brand-sky/70">
                 <Image
-                  src="/images/photos/5.jpg"
+                  src="/images/photos/5-optimized.webp"
                   alt="Consultoria financeira"
                   fill
                   className="object-cover"

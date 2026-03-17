@@ -15,6 +15,11 @@ export const leadFormSchema = z.object({
     .max(1000, 'Mensagem muito longa')
     .optional(),
 
+  website: z.string()
+    .trim()
+    .max(0, 'Campo inválido')
+    .optional(),
+
   consent: z.literal(true, {
     errorMap: () => ({ message: 'Você deve aceitar os termos para continuar' })
   })

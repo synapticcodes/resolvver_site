@@ -120,7 +120,7 @@ Fontes de dados:
 Imagens utilizadas:
 
 - Hero: `public/images/photos/1.png.webp`
-- App: `public/images/app-resolvver-mock.png`
+- App: `public/images/app-resolvver-mock-optimized.webp`
 - Parceiros: `public/images/partners/N1.png` até `N44.png`
 - Acreditação: `public/images/selo-procon.png`
 - Depoimentos: `public/images/testimonials/*.webp`
@@ -145,7 +145,7 @@ Fontes de dados:
 Imagens utilizadas:
 
 - Hero: `public/images/photos/4.jpg`
-- Story: `public/images/photos/3.jpg`
+- Story: `public/images/photos/3-optimized.webp`
 
 Funcionalidades:
 
@@ -170,7 +170,7 @@ Fontes de dados:
 Imagens utilizadas:
 
 - Hero: `public/images/photos/2.jpg`
-- CTA: `public/images/photos/5.jpg`
+- CTA: `public/images/photos/5-optimized.webp`
 
 Funcionalidades:
 
@@ -234,7 +234,7 @@ Fontes de dados:
 Imagens utilizadas:
 
 - Hero: `public/images/photos/A.jpg`
-- CTA: `public/images/photos/5.jpg`
+- CTA: `public/images/photos/5-optimized.webp`
 - Cards: `public/images/blog/*` por `thumbnailUrl`
 
 Funcionalidades:
@@ -445,9 +445,9 @@ Campos de cada post:
 |---|---|---|
 | Favicon 32 | `public/favicon-32x32.png` | ícone do site |
 | Favicon 48 | `public/favicon-48x48.png` | ícone Apple |
-| Logo header | `public/images/n.png` | cabeçalho |
-| Logo footer | `public/images/logo-branco.png` | rodapé |
-| OG image | `https://resolvver.com/og-image.png` | compartilhamento social |
+| Logo header | `public/images/n-optimized.webp` | cabeçalho |
+| Logo footer | `public/images/logo-branco-optimized.webp` | rodapé |
+| OG image | `public/og-image.jpg` | compartilhamento social |
 
 ### 9.2 Imagens de páginas
 
@@ -455,17 +455,22 @@ Campos de cada post:
 |---|---|---|
 | Foto hero | `public/images/photos/1.png.webp` | home hero |
 | Foto FAQ | `public/images/photos/2.jpg` | hero do FAQ |
-| Foto sobre | `public/images/photos/3.jpg` | bloco story do sobre |
+| Foto sobre | `public/images/photos/3-optimized.webp` | bloco story do sobre |
 | Foto sobre hero | `public/images/photos/4.jpg` | hero do sobre |
-| Foto CTA | `public/images/photos/5.jpg` | CTA do FAQ e CTA do blog |
+| Foto CTA | `public/images/photos/5-optimized.webp` | CTA do FAQ e CTA do blog |
 | Foto blog hero | `public/images/photos/A.jpg` | hero da listagem do blog |
-| Mock app | `public/images/app-resolvver-mock.png` | seção AppTracking |
+| Mock app | `public/images/app-resolvver-mock-optimized.webp` | seção AppTracking |
 | Selo | `public/images/selo-procon.png` | acreditações |
 
 ### 9.3 Blog
 
 - thumbnails por post: `public/images/blog/1.webp` até `public/images/blog/18.webp/.jpg/.png/.jpeg`
 - fallback do card: `BlogCard` tem uma lista interna de 5 fotos genéricas, mas hoje a base já informa `thumbnailUrl` nos posts.
+
+### 9.5 Limpeza de originais
+
+- imagens antigas e versões substituídas foram removidas do projeto após a validação dos assets otimizados
+- o site depende apenas dos arquivos ativos mantidos em `public/`
 
 ### 9.4 Parceiros
 

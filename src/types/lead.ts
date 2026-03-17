@@ -4,6 +4,7 @@ export interface LeadFormData {
   debtAmount?: string
   message?: string
   consent: boolean
+  website?: string
 }
 
 export interface LeadSubmissionResponse {

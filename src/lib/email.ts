@@ -1,18 +1,59 @@
 import nodemailer from 'nodemailer'
 import type { LeadFormData } from '@/types/lead'
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT || '587'),
-  secure: false,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-})
+const escapeHtml = (value: string) =>
+  value
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;')
+
+const getRequiredEnv = (name: 'SMTP_HOST' | 'SMTP_PORT' | 'SMTP_USER' | 'SMTP_PASS' | 'LEAD_EMAIL_TO') => {
+  const value = process.env[name]
+
+  if (!value) {
+    throw new Error(`Variável de ambiente obrigatória ausente: ${name}`)
+  }
+
+  return value
+}
+
+let transporter: nodemailer.Transporter | null = null
+
+const getTransporter = () => {
+  if (transporter) {
+    return transporter
+  }
+
+  const smtpHost = getRequiredEnv('SMTP_HOST')
+  const smtpPort = Number.parseInt(getRequiredEnv('SMTP_PORT'), 10)
+  const smtpUser = getRequiredEnv('SMTP_USER')
+  const smtpPass = getRequiredEnv('SMTP_PASS')
+
+  if (Number.isNaN(smtpPort)) {
+    throw new Error('SMTP_PORT precisa ser um numero valido')
+  }
+
+  transporter = nodemailer.createTransport({
+    host: smtpHost,
+    port: smtpPort,
+    secure: false,
+    auth: {
+      user: smtpUser,
+      pass: smtpPass,
+    },
+  })
+
+  return transporter
+}
 
 export async function sendLeadEmail(data: LeadFormData) {
   const { name, email, debtAmount, message } = data
+  const safeName = escapeHtml(name)
+  const safeEmail = escapeHtml(email)
+  const safeDebtAmount = debtAmount ? escapeHtml(debtAmount) : undefined
+  const safeMessage = message ? escapeHtml(message) : undefined
 
   const htmlContent = `
     <!DOCTYPE html>
@@ -37,22 +78,22 @@ export async function sendLeadEmail(data: LeadFormData) {
           <div class="content">
             <div class="field">
               <div class="label">Nome:</div>
-              <div class="value">${name}</div>
+              <div class="value">${safeName}</div>
             </div>
             <div class="field">
               <div class="label">Email:</div>
-              <div class="value">${email}</div>
+              <div class="value">${safeEmail}</div>
             </div>
-            ${debtAmount ? `
+            ${safeDebtAmount ? `
               <div class="field">
                 <div class="label">Valor da Dívida:</div>
-                <div class="value">${debtAmount}</div>
+                <div class="value">${safeDebtAmount}</div>
               </div>
             ` : ''}
-            ${message ? `
+            ${safeMessage ? `
               <div class="field">
                 <div class="label">Mensagem:</div>
-                <div class="value">${message}</div>
+                <div class="value">${safeMessage}</div>
               </div>
             ` : ''}
           </div>
@@ -65,8 +106,8 @@ export async function sendLeadEmail(data: LeadFormData) {
   `
 
   const mailOptions = {
-    from: process.env.SMTP_USER,
-    to: process.env.LEAD_EMAIL_TO,
+    from: getRequiredEnv('SMTP_USER'),
+    to: getRequiredEnv('LEAD_EMAIL_TO'),
     subject: `Novo Lead: ${name}`,
     html: htmlContent,
     text: `
@@ -80,10 +121,10 @@ ${message ? `Mensagem: ${message}` : ''}
   }
 
   try {
-    await transporter.sendMail(mailOptions)
+    await getTransporter().sendMail(mailOptions)
     return { success: true }
   } catch (error) {
-    console.error('Erro ao enviar email do lead:', error)
+    console.error('Erro ao enviar email do lead:', error instanceof Error ? error.message : 'Erro desconhecido')
     throw error
   }
 }

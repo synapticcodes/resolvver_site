@@ -1,14 +1,11 @@
 import { MetadataRoute } from 'next'
-import { getAllSlugs } from '@/data/blog/posts'
+import { blogPostMetadata } from '@/data/blog/posts'
 import { siteConfig } from '@/config/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url
+  const siteLastUpdated = new Date(siteConfig.lastUpdated)
 
-  // Get all blog post slugs
-  const blogSlugs = getAllSlugs()
-
-  // Static pages
   const staticPages = [
     '',
     '/sobre',
@@ -18,15 +15,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contato',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: siteLastUpdated,
     changeFrequency: 'monthly' as const,
     priority: route === '' ? 1 : 0.8,
   }))
 
-  // Blog posts
-  const blogPages = blogSlugs.map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date(),
+  const blogPages = blogPostMetadata.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.publishedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }))

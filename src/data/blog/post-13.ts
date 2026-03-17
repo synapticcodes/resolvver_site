@@ -8,7 +8,7 @@ export const post: BlogPost = {
   category: 'credito',
   readTime: 6,
   publishedAt: '2025-01-13',
-  thumbnailUrl: '/images/blog/6.png',
+  thumbnailUrl: '/images/blog/6-optimized.webp',
   content: `<p><strong>Como conseguir um cartão de crédito: o que influencia a análise e como aumentar suas chances</strong></p>
 <p></p>
 <p>Conseguir um cartão de crédito pode parecer difícil quando a resposta é “não aprovado” — mas na maioria das vezes a análise segue critérios bem objetivos. Bancos e fintechs avaliam o risco de você não pagar a fatura e, com base nisso, decidem <strong>se aprovam</strong> e <strong>qual limite oferecem</strong>.</p>

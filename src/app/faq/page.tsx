@@ -76,7 +76,7 @@ export default function FaqPage() {
 
               <div className="relative h-56 md:h-64 rounded-2xl overflow-hidden border border-brand-sky/70">
                 <Image
-                  src="/images/photos/5.jpg"
+                  src="/images/photos/5-optimized.webp"
                   alt="Consultoria financeira"
                   fill
                   className="object-cover"
