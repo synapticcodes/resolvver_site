@@ -4,6 +4,10 @@ export const siteConfig = {
   url: 'https://resolvver.com',
   ogImage: 'https://resolvver.com/og-image.jpg',
   lastUpdated: '2026-03-17T00:00:00.000Z',
+  analytics: {
+    ga4MeasurementId: 'G-N152GDZNH1',
+    clarityProjectId: 'vr2yamcer9',
+  },
   links: {
     facebook: 'https://facebook.com/resolvver',
     instagram: 'https://instagram.com/resolvver',

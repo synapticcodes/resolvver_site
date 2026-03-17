@@ -8,7 +8,7 @@ Este documento descreve o funcionamento real do site a partir do código-fonte a
 - Objetivo principal: apresentar a proposta da empresa, educar o usuário via blog e capturar interesse comercial via formulário.
 - Modelo de dados: conteúdo majoritariamente estático em arquivos TypeScript dentro de `src/data`.
 - Backend: apenas uma API HTTP para submissão de lead por email.
-- Infra principal: Next.js 14 com App Router.
+- Infra principal: Next.js 16 com App Router.
 
 ## 2. Estrutura operacional do repositório
 
@@ -27,12 +27,13 @@ Este documento descreve o funcionamento real do site a partir do código-fonte a
 
 | Camada | Tecnologia | Evidência |
 |---|---|---|
-| Framework web | Next.js 14 | `package.json`, `next.config.js` |
+| Framework web | Next.js 16 | `package.json`, `next.config.js` |
 | UI | React 18 | `package.json` |
 | Linguagem | TypeScript | `package.json`, `tsconfig.json` |
 | Estilo | Tailwind CSS | `tailwind.config.ts`, `postcss.config.js`, `src/app/globals.css` |
 | Validação | Zod | `src/lib/validation.ts` |
 | Email | Nodemailer | `src/lib/email.ts` |
+| Monitoramento | Sentry para cliente, servidor e edge | `package.json`, `instrumentation-client.ts`, `sentry.server.config.ts`, `sentry.edge.config.ts`, `src/app/global-error.tsx` |
 | SEO nativo | Metadata API, `sitemap.ts`, `robots.ts` | `src/app/layout.tsx`, `src/app/sitemap.ts`, `src/app/robots.ts` |
 | Fontes | `next/font/google` com Manrope e Space Grotesk | `src/app/layout.tsx` |
 | Deploy previsto | Vercel e Netlify | `README.md`, `netlify.toml` |
@@ -76,7 +77,7 @@ Os pontos realmente interativos hoje são:
 - `src/components/home/Testimonials.tsx`
   - expande a grade para mostrar mais depoimentos.
 - `src/app/blog/page.tsx`
-  - filtra posts por categoria no cliente.
+  - filtra posts por categoria via querystring.
 
 ### 4.5 Backend ativo
 

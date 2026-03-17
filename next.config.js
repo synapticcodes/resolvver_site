@@ -1,4 +1,5 @@
 const path = require('path')
+const { withSentryConfig } = require('@sentry/nextjs')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -35,4 +36,22 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+const temSourceMapsDoSentry =
+  Boolean(process.env.SENTRY_AUTH_TOKEN) &&
+  Boolean(process.env.SENTRY_ORG) &&
+  Boolean(process.env.SENTRY_PROJECT)
+
+const opcoesSentry = {
+  silent: !process.env.CI,
+}
+
+if (temSourceMapsDoSentry) {
+  Object.assign(opcoesSentry, {
+    authToken: process.env.SENTRY_AUTH_TOKEN,
+    org: process.env.SENTRY_ORG,
+    project: process.env.SENTRY_PROJECT,
+    widenClientFileUpload: true,
+  })
+}
+
+module.exports = withSentryConfig(nextConfig, opcoesSentry)
