@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'dicas-de-orcamento-pessoal',
+  slug: 'divida-de-agua-acompanha-o-imovel-entenda-quem-paga-e-como-se-proteger',
+  legacySlugs: ['dicas-de-orcamento-pessoal'],
   title: 'Dívida de água acompanha o imóvel? Entenda quem paga e como se proteger',
   excerpt: 'Dívida de água acompanha o imóvel? Entenda quem paga e como se proteger Alugar um imóvel (seja como inquilino ou proprietário) envolve cuidados que ev...',
   category: 'conselhos-financeiros',

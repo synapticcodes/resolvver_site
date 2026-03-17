@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'nossa-historia',
+  slug: 'emprestimo-para-negativado-na-hora-como-solicitar-passo-a-passo',
+  legacySlugs: ['nossa-historia'],
   title: 'Empréstimo para negativado na hora: como solicitar - passo a passo',
   excerpt: 'Empréstimo para negativado na hora: como solicitar - passo a passo Estar com o nome negativado não significa que você ficou “sem saída”....',
   category: 'credito',

@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'depoimentos-de-clientes',
+  slug: 'consignado-clt-o-que-e-como-funciona-e-vale-a-pena',
+  legacySlugs: ['depoimentos-de-clientes'],
   title: 'Consignado CLT: o que é, como funciona e vale a pena?',
   excerpt: 'Consignado CLT: o que é, como funciona e vale a pena? O consignado CLT (também chamado de consignado privado) é um empréstimo em que as parcelas são d...',
   category: 'credito',

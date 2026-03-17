@@ -1,4 +1,4 @@
-import { BlogPost, BlogCategory } from '@/types/blog'
+import { BlogPost, BlogCategory, BlogPostMetadata } from '@/types/blog'
 import { post as post1 } from './post-1-1'
 import { post as post2 } from './post-2-2'
 import { post as post3 } from './post-3'
@@ -39,8 +39,20 @@ export const blogPosts: BlogPost[] = [
   post18,
 ].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
 
+export const blogPostMetadata: BlogPostMetadata[] = blogPosts.map(({ content, legacySlugs, ...metadata }) => metadata)
+
+const legacySlugMap = new Map(
+  blogPosts.flatMap((post) =>
+    (post.legacySlugs ?? []).map((legacySlug) => [legacySlug, post.slug] as const)
+  )
+)
+
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((post) => post.slug === slug)
+}
+
+export function getCanonicalSlugByLegacySlug(slug: string): string | undefined {
+  return legacySlugMap.get(slug)
 }
 
 export function getPostsByCategory(category: BlogCategory): BlogPost[] {

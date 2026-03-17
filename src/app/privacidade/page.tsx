@@ -1,10 +1,12 @@
-import type { Metadata } from 'next'
 import Container from '@/components/ui/Container'
+import { siteConfig } from '@/config/site'
+import { buildPageMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: 'Política de Privacidade',
-  description: 'Política de Privacidade da Resolvver - Como tratamos seus dados pessoais.',
-}
+  description: 'Entenda como a Resolvver coleta, utiliza, protege e trata dados pessoais em seus canais e formulários.',
+  path: '/privacidade',
+})
 
 export default function PrivacyPage() {
   return (
@@ -58,7 +60,7 @@ export default function PrivacyPage() {
 
             <h2>6. Contato</h2>
             <p>
-              Para questões sobre esta política de privacidade, entre em contato através do email contato@resolvver.com.br
+              Para questões sobre esta política de privacidade, entre em contato através do email {siteConfig.contact.email}
             </p>
           </div>
         </Container>

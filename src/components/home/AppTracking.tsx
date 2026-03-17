@@ -52,10 +52,9 @@ export default function AppTracking() {
               <div className="rounded-3xl px-6 py-8 md:px-8 md:py-10">
                 <div className="relative mx-auto max-w-sm h-[300px] sm:h-[360px] md:h-[400px] lg:h-[440px] overflow-hidden sm:overflow-visible">
                   <Image
-                    src="/images/app-resolvver-mock.png"
+                    src="/images/app-resolvver-mock-optimized.webp"
                     alt="Tela do App Resolvver"
                     fill
-                    priority
                     className="object-contain object-right scale-[1.35] sm:scale-[1.75] md:scale-[1.9] translate-x-2 sm:translate-x-6 md:translate-x-8 drop-shadow-[0_30px_50px_rgba(0,0,0,0.35)]"
                     sizes="(min-width: 1280px) 520px, (min-width: 1024px) 480px, 80vw"
                   />

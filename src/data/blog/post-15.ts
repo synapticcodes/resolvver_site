@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'recuperacao-de-credito',
+  slug: 'emprestimo-consignado-beneficios-e-cuidados-para-evitar-o-superendividamento',
+  legacySlugs: ['recuperacao-de-credito'],
   title: 'Empréstimo consignado: benefícios e cuidados para evitar o superendividamento',
   excerpt: 'Empréstimo consignado: benefícios e cuidados para evitar o superendividamento O empréstimo consignado costuma ter juros menores e aprovação mais simpl...',
   category: 'credito',

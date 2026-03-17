@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'economize-dinheiro-no-dia-a-dia',
+  slug: 'como-fazer-renda-extra-mais-de-50-ideias-para-ganhar-dinheiro-online-e-offline',
+  legacySlugs: ['economize-dinheiro-no-dia-a-dia'],
   title: 'Como fazer renda extra: mais de 50 ideias para ganhar dinheiro (online e offline)',
   excerpt: 'Como fazer renda extra: mais de 50 ideias para ganhar dinheiro (online e offline) Se você está precisando de uma grana a mais para fechar o mês, pagar...',
   category: 'conselhos-financeiros',

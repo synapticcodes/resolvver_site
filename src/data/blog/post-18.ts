@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'missao-e-valores',
+  slug: 'emprestimo-para-mei-negativado-conheca-as-opcoes-e-como-conseguir-com-seguranca',
+  legacySlugs: ['missao-e-valores'],
   title: 'Empréstimo para MEI negativado: conheça as opções e como conseguir com segurança',
   excerpt: 'Empréstimo para MEI negativado: conheça as opções e como conseguir com segurança Ter MEI (Microempreendedor Individual) abre portas: CNPJ, emissão d...',
   category: 'credito',

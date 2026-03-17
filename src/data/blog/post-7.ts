@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'como-sair-das-dividas',
+  slug: 'fgts-como-funciona-o-saque-aniversario',
+  legacySlugs: ['como-sair-das-dividas'],
   title: 'FGTS: como funciona o Saque-Aniversário',
   excerpt: 'FGTS: como funciona o Saque-Aniversário O Saque-Aniversário é uma modalidade do FGTS em que o trabalhador pod...',
   category: 'conselhos-financeiros',

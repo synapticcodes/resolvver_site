@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'tipos-de-credito-disponiveis',
+  slug: 'cartao-de-credito-para-aposentado-como-funciona-vantagens-e-desvantagens',
+  legacySlugs: ['tipos-de-credito-disponiveis'],
   title: 'Cartão de crédito para aposentado: como funciona, vantagens e desvantagens',
   excerpt: 'Cartão de crédito para aposentado: como funciona, vantagens e desvantagens O cartão de crédito para aposentado pode ser uma boa ferramenta de praticid...',
   category: 'credito',

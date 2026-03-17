@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'como-melhorar-seu-score-de-credito',
+  slug: 'imei-como-bloquear-um-celular-roubado-ou-perdido-de-forma-rapida-e-segura',
+  legacySlugs: ['como-melhorar-seu-score-de-credito'],
   title: 'IMEI: como bloquear um celular roubado ou perdido de forma rápida e segura',
   excerpt: 'IMEI: como bloquear um celular roubado ou perdido de forma rápida e segura Teve o celular roubado, furtado ou perdeu o aparelho? Uma das medidas mais ...',
   category: 'conselhos-financeiros',

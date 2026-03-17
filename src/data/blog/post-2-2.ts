@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'sobre-a-resolvver',
+  slug: 'quando-faz-sentido-aumentar-o-limite-do-cartao-de-credito',
+  legacySlugs: ['sobre-a-resolvver'],
   title: 'Quando faz sentido aumentar o limite do cartão de crédito?',
   excerpt: 'Quando faz sentido aumentar o limite do cartão de crédito? Chegou aquela notificação do banco dizendo algo como: “Pelo bom uso do seu cartão, liberamo...',
   category: 'credito',

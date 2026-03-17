@@ -1,13 +1,14 @@
-import type { Metadata } from 'next'
 import Container from '@/components/ui/Container'
 import Card from '@/components/ui/Card'
 import LeadForm from '@/components/forms/LeadForm'
 import { siteConfig } from '@/config/site'
+import { buildPageMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: 'Contato',
-  description: 'Entre em contato com a Resolvver. Estamos prontos para ajudá-lo a resolver suas dívidas.',
-}
+  description: 'Entre em contato com a Resolvver para tirar dúvidas, iniciar sua simulação e entender as possibilidades de reorganizar suas dívidas.',
+  path: '/contato',
+})
 
 export default function ContactPage() {
   return (

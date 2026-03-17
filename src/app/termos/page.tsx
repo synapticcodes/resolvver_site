@@ -1,10 +1,12 @@
-import type { Metadata } from 'next'
 import Container from '@/components/ui/Container'
+import { siteConfig } from '@/config/site'
+import { buildPageMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: 'Termos de Uso',
-  description: 'Termos de Uso da Resolvver - Condições para utilização dos nossos serviços.',
-}
+  description: 'Conheça as condições de uso do site da Resolvver, responsabilidades do usuário e regras aplicáveis aos serviços oferecidos.',
+  path: '/termos',
+})
 
 export default function TermsPage() {
   return (
@@ -66,7 +68,7 @@ export default function TermsPage() {
 
             <h2>8. Contato</h2>
             <p>
-              Para questões sobre estes termos, entre em contato através do email contato@resolvver.com.br
+              Para questões sobre estes termos, entre em contato através do email {siteConfig.contact.email}
             </p>
           </div>
         </Container>

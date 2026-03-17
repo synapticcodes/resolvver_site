@@ -14,7 +14,7 @@ O nosso atendimento é humano, discreto e fácil de entender. Analisamos sua sit
 O resultado é prático: você consegue descontos no valor total da dívida - que podem chegar a 90%, além de parcelamentos especiais e bastante prazo para pagar. Assim, você respira, se reorganiza e volta a ter controle — a dívida vira página virada e você ganha uma nova chance de obter crédito.
 
 Aqui, a prioridade é clareza e segurança: você entende o que está sendo feito, por quê e quais são os próximos passos. E acompanha tudo pelo aplicativo, com atualizações em tempo real e suporte humano em diferentes canais.`,
-    image: '/images/photos/3.jpg',
+    image: '/images/photos/3-optimized.webp',
   },
 
   pillars: [

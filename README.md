@@ -4,11 +4,12 @@ Site institucional da Resolvver - Empresa de renegociação de dívidas.
 
 ## Stack Técnico
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 16 (App Router)
 - **Linguagem**: TypeScript (strict mode)
 - **Estilização**: Tailwind CSS
 - **Validação**: Zod
 - **Email**: Nodemailer
+- **Monitoramento**: Sentry
 - **Deploy**: Vercel
 
 ## Estrutura do Projeto
@@ -55,7 +56,13 @@ SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_USER=seu-email@gmail.com
 SMTP_PASS=senha-app
-LEAD_EMAIL_TO=leads@resolvver.com.br
+LEAD_EMAIL_TO=contato@resolvver.com
+NEXT_PUBLIC_SENTRY_DSN=
+NEXT_PUBLIC_SENTRY_TRACES_SAMPLE_RATE=0.1
+SENTRY_TRACES_SAMPLE_RATE=0.1
+SENTRY_ORG=
+SENTRY_PROJECT=
+SENTRY_AUTH_TOKEN=
 ```
 
 ### 3. Executar em desenvolvimento
@@ -78,11 +85,11 @@ npm start
 ### Blog
 
 - 18 artigos organizados por categorias:
-  - Conselhos Financeiros (7 artigos)
-  - Crédito (6 artigos)
-  - Sobre nós (5 artigos)
+  - Conselhos Financeiros (8 artigos)
+  - Créditos e Dívidas (10 artigos)
 - Filtro por categoria
-- Páginas estáticas geradas em build time
+- Posts gerados estaticamente em build time
+- Listagem com filtro por querystring
 - SEO otimizado para cada artigo
 
 ### Formulário de Lead
@@ -99,6 +106,13 @@ npm start
 - Sitemap dinâmico (`/sitemap.xml`)
 - Robots.txt configurado
 - OpenGraph tags para redes sociais
+
+### Monitoramento com Sentry
+
+- SDK do Sentry instalado para frontend, servidor e edge
+- `NEXT_PUBLIC_SENTRY_DSN` ativa o envio de eventos
+- `SENTRY_ORG`, `SENTRY_PROJECT` e `SENTRY_AUTH_TOKEN` ativam upload de source maps no build
+- Headers sensíveis como `authorization`, `cookie`, `x-forwarded-for` e `x-real-ip` são removidos antes do envio
 
 ## Deploy
 
@@ -118,7 +132,6 @@ O projeto é compatível com qualquer plataforma que suporte Next.js:
 
 ## Melhorias Futuras
 
-- [ ] Implementar analytics (Google Analytics/Plausible)
 - [ ] Adicionar testes (Jest/React Testing Library)
 - [ ] Implementar sistema de newsletter
 - [ ] Adicionar mais conteúdo ao blog

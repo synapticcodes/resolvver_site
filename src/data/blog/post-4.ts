@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'como-funciona-nossa-metodologia',
+  slug: 'herdeiro-com-dividas-pode-renunciar-a-heranca-entenda-como-funciona',
+  legacySlugs: ['como-funciona-nossa-metodologia'],
   title: 'Herdeiro com dívidas pode renunciar à herança? Entenda como funciona',
   excerpt: 'Herdeiro com dívidas pode renunciar à herança? Entenda como funciona Perder alguém da família já é um momento difícil — e, junto com o luto, costumam ...',
   category: 'conselhos-financeiros',

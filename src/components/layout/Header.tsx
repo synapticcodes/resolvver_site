@@ -19,11 +19,12 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/images/n.png"
+              src="/images/n-optimized.webp"
               alt="Resolvver"
               width={420}
               height={274}
               className="h-32 w-auto md:h-36"
+              sizes="(min-width: 768px) 144px, 128px"
               priority
             />
           </Link>
