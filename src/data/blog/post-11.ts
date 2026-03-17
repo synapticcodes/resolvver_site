@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'entenda-seu-relatorio-de-credito',
+  slug: 'como-ganhar-dinheiro-com-nota-fiscal-cpf-na-nota-creditos-e-sorteios',
+  legacySlugs: ['entenda-seu-relatorio-de-credito'],
   title: 'Como ganhar dinheiro com nota fiscal: CPF na nota, créditos e sorteios',
   excerpt: 'Como ganhar dinheiro com nota fiscal: CPF na nota, créditos e sorteios Você sabia que pedir CPF na nota fiscal pode gerar créditos, sorteios e até din...',
   category: 'credito',

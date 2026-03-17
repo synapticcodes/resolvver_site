@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next'
 import { getAllSlugs } from '@/data/blog/posts'
+import { siteConfig } from '@/config/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://resolvver.com.br'
+  const baseUrl = siteConfig.url
 
   // Get all blog post slugs
   const blogSlugs = getAllSlugs()

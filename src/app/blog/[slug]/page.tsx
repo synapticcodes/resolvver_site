@@ -1,14 +1,24 @@
-import { notFound } from 'next/navigation'
+import { notFound, permanentRedirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import Container from '@/components/ui/Container'
 import Button from '@/components/ui/Button'
-import { getPostBySlug, getAllSlugs } from '@/data/blog/posts'
+import {
+  getPostBySlug,
+  getAllSlugs,
+  getCanonicalSlugByLegacySlug,
+} from '@/data/blog/posts'
+import { siteConfig } from '@/config/site'
 
 interface BlogPostPageProps {
   params: {
     slug: string
   }
 }
+
+const categoryLabels = {
+  'conselhos-financeiros': 'Conselhos Financeiros',
+  'credito': 'Créditos e Dívidas',
+} as const
 
 export async function generateStaticParams() {
   const slugs = getAllSlugs()
@@ -20,7 +30,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
-  const post = getPostBySlug(params.slug)
+  const canonicalSlug = getCanonicalSlugByLegacySlug(params.slug) ?? params.slug
+  const post = getPostBySlug(canonicalSlug)
 
   if (!post) {
     return {
@@ -31,6 +42,30 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
+    openGraph: {
+      type: 'article',
+      url: `${siteConfig.url}/blog/${post.slug}`,
+      title: post.title,
+      description: post.excerpt,
+      siteName: siteConfig.name,
+      publishedTime: new Date(post.publishedAt).toISOString(),
+      section: categoryLabels[post.category],
+      images: [
+        {
+          url: post.thumbnailUrl ?? siteConfig.ogImage,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [post.thumbnailUrl ?? siteConfig.ogImage],
+    },
   }
 }
 
@@ -41,6 +76,12 @@ const stripLeadingTitle = (content: string, title: string) => {
 }
 
 export default function BlogPostPage({ params }: BlogPostPageProps) {
+  const canonicalSlug = getCanonicalSlugByLegacySlug(params.slug)
+
+  if (canonicalSlug) {
+    permanentRedirect(`/blog/${canonicalSlug}`)
+  }
+
   const post = getPostBySlug(params.slug)
 
   if (!post) {
@@ -48,11 +89,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   const cleanedContent = stripLeadingTitle(post.content, post.title)
-
-  const categoryLabels = {
-    'conselhos-financeiros': 'Conselhos Financeiros',
-    'credito': 'Créditos e Dívidas',
-  }
 
   return (
     <>

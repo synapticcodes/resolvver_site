@@ -1,12 +1,13 @@
-import type { Metadata } from 'next'
 import Image from 'next/image'
 import Container from '@/components/ui/Container'
 import { aboutContent } from '@/data/about-content'
+import { buildPageMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'Sobre',
-  description: 'Conheça a Resolvver, empresa especializada em bem-estar financeiro que ajuda mais de 80 mil pessoas por ano.',
-}
+export const metadata = buildPageMetadata({
+  title: 'Sobre a Resolvver',
+  description: 'Conheça a Resolvver, empresa especializada em bem-estar financeiro, atendimento humano e renegociação de dívidas com acompanhamento em cada etapa.',
+  path: '/sobre',
+})
 
 export default function AboutPage() {
   return (

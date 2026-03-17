@@ -10,7 +10,6 @@
 ├─ public/
 │  ├─ favicon-32x32.png
 │  ├─ favicon-48x48.png
-│  ├─ robots.txt
 │  └─ images/
 │     ├─ logo-header.png
 │     ├─ logo-footer.png

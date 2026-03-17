@@ -19,6 +19,7 @@ export default function Footer() {
                 width={260}
                 height={174}
                 className="h-28 w-auto md:h-40"
+                sizes="(min-width: 768px) 160px, 112px"
               />
             </Link>
             <p className="text-brand-sky/80 text-sm leading-relaxed mb-4">

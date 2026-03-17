@@ -1,21 +1,93 @@
-'use client'
-
-import { useState } from 'react'
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Container from '@/components/ui/Container'
 import BlogCard from '@/components/blog/BlogCard'
 import CategoryFilter from '@/components/blog/CategoryFilter'
 import Button from '@/components/ui/Button'
-import { blogPosts } from '@/data/blog/posts'
+import { blogPostMetadata } from '@/data/blog/posts'
 import type { BlogCategory } from '@/types/blog'
+import { siteConfig } from '@/config/site'
 
-export default function BlogPage() {
-  const [selectedCategory, setSelectedCategory] = useState<BlogCategory | 'todos'>('todos')
+interface BlogPageProps {
+  searchParams?: {
+    categoria?: string
+  }
+}
+
+const isValidCategory = (value?: string): value is BlogCategory =>
+  value === 'conselhos-financeiros' || value === 'credito'
+
+const categoryMetadataMap: Record<BlogCategory, {
+  title: string
+  description: string
+}> = {
+  'conselhos-financeiros': {
+    title: 'Blog: Conselhos Financeiros',
+    description: 'Conteúdos práticos da Resolvver sobre orçamento, organização financeira e decisões mais seguras para o dia a dia.',
+  },
+  'credito': {
+    title: 'Blog: Créditos e Dívidas',
+    description: 'Artigos da Resolvver sobre crédito, renegociação, score, cartão e soluções para organizar dívidas com mais clareza.',
+  },
+}
+
+export async function generateMetadata({
+  searchParams,
+}: BlogPageProps): Promise<Metadata> {
+  const selectedCategory = isValidCategory(searchParams?.categoria)
+    ? searchParams.categoria
+    : undefined
+
+  const categoryMetadata = selectedCategory
+    ? categoryMetadataMap[selectedCategory]
+    : {
+        title: 'Blog',
+        description: 'Conteúdos práticos sobre finanças pessoais, crédito e organização do orçamento para ajudar você a tomar decisões melhores.',
+      }
+
+  const canonicalUrl = selectedCategory
+    ? `${siteConfig.url}/blog?categoria=${selectedCategory}`
+    : `${siteConfig.url}/blog`
+
+  return {
+    title: categoryMetadata.title,
+    description: categoryMetadata.description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      type: 'website',
+      url: canonicalUrl,
+      title: `${categoryMetadata.title} | ${siteConfig.name}`,
+      description: categoryMetadata.description,
+      siteName: siteConfig.name,
+      images: [
+        {
+          url: siteConfig.ogImage,
+          width: 1200,
+          height: 630,
+          alt: categoryMetadata.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${categoryMetadata.title} | ${siteConfig.name}`,
+      description: categoryMetadata.description,
+      images: [siteConfig.ogImage],
+    },
+  }
+}
+
+export default function BlogPage({ searchParams }: BlogPageProps) {
+  const selectedCategory = isValidCategory(searchParams?.categoria)
+    ? searchParams.categoria
+    : 'todos'
 
   const filteredPosts =
     selectedCategory === 'todos'
-      ? blogPosts
-      : blogPosts.filter((post) => post.category === selectedCategory)
+      ? blogPostMetadata
+      : blogPostMetadata.filter((post) => post.category === selectedCategory)
 
   return (
     <>
@@ -57,19 +129,16 @@ export default function BlogPage() {
       {/* Blog Content */}
       <section className="py-16 md:py-24 bg-white">
         <Container>
-          <CategoryFilter
-            selectedCategory={selectedCategory}
-            onCategoryChange={setSelectedCategory}
-          />
+          <CategoryFilter selectedCategory={selectedCategory} />
 
           {filteredPosts.length === 0 ? (
-            <div className="text-center py-12">
-              <p className="text-brand-slate text-lg">
+            <div className="py-12 text-center">
+              <p className="text-lg text-brand-slate">
                 Nenhum artigo encontrado nesta categoria.
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {filteredPosts.map((post, index) => (
                 <BlogCard key={post.slug} post={post} index={index} />
               ))}

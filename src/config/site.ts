@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: 'Resolvver',
   description: 'Renegociação de dívidas com até 90% de desconto. Mais de 600 mil clientes atendidos em 7 anos.',
-  url: 'https://resolvver.com.br',
-  ogImage: 'https://resolvver.com.br/og-image.png',
+  url: 'https://resolvver.com',
+  ogImage: 'https://resolvver.com/og-image.jpg',
   links: {
     facebook: 'https://facebook.com/resolvver',
     instagram: 'https://instagram.com/resolvver',

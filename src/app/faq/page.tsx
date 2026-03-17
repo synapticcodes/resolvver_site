@@ -1,14 +1,15 @@
-import type { Metadata } from 'next'
 import Image from 'next/image'
 import Container from '@/components/ui/Container'
 import Accordion from '@/components/ui/Accordion'
 import Button from '@/components/ui/Button'
 import { faqItems } from '@/data/faq'
+import { buildPageMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: 'Perguntas Frequentes',
-  description: 'Respostas diretas para as perguntas mais comuns de quem está colocando a vida financeira no lugar com a Resolvver.',
-}
+  description: 'Respostas diretas sobre renegociação de dívidas, funcionamento da Resolvver, descontos, acompanhamento e segurança do processo.',
+  path: '/faq',
+})
 
 export default function FaqPage() {
   return (

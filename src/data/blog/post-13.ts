@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'credito-consciente',
+  slug: 'como-conseguir-um-cartao-de-credito-o-que-influencia-a-analise-e-como-aumentar-suas-chances',
+  legacySlugs: ['credito-consciente'],
   title: 'Como conseguir um cartão de crédito: o que influencia a análise e como aumentar suas chances',
   excerpt: 'Como conseguir um cartão de crédito: o que influencia a análise e como aumentar suas chances Conseguir um cartão de crédito pode parecer difícil quand...',
   category: 'credito',

@@ -55,7 +55,6 @@ export default function AppTracking() {
                     src="/images/app-resolvver-mock.png"
                     alt="Tela do App Resolvver"
                     fill
-                    priority
                     className="object-contain object-right scale-[1.35] sm:scale-[1.75] md:scale-[1.9] translate-x-2 sm:translate-x-6 md:translate-x-8 drop-shadow-[0_30px_50px_rgba(0,0,0,0.35)]"
                     sizes="(min-width: 1280px) 520px, (min-width: 1024px) 480px, 80vw"
                   />

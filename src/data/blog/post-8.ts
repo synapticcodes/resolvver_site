@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'educacao-financeira-na-pratica',
+  slug: 'aplicativo-falso-no-celular-como-reconhecer-evitar-e-se-proteger-de-golpes',
+  legacySlugs: ['educacao-financeira-na-pratica'],
   title: 'Aplicativo falso no celular: como reconhecer, evitar e se proteger de golpes',
   excerpt: 'Aplicativo falso no celular: como reconhecer, evitar e se proteger de golpes Hoje a gente resolve praticamente tudo pelo celular: banco, compras, docu...',
   category: 'conselhos-financeiros',

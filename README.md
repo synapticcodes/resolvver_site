@@ -55,7 +55,7 @@ SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_USER=seu-email@gmail.com
 SMTP_PASS=senha-app
-LEAD_EMAIL_TO=leads@resolvver.com.br
+LEAD_EMAIL_TO=contato@resolvver.com
 ```
 
 ### 3. Executar em desenvolvimento

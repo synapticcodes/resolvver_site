@@ -1,11 +1,9 @@
-'use client'
-
+import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import type { BlogCategory } from '@/types/blog'
 
 interface CategoryFilterProps {
   selectedCategory: BlogCategory | 'todos'
-  onCategoryChange: (category: BlogCategory | 'todos') => void
 }
 
 const categories = [
@@ -14,14 +12,14 @@ const categories = [
   { id: 'credito', label: 'Créditos e Dívidas' },
 ] as const
 
-export default function CategoryFilter({ selectedCategory, onCategoryChange }: CategoryFilterProps) {
+export default function CategoryFilter({ selectedCategory }: CategoryFilterProps) {
   return (
     <div className="flex flex-wrap items-center gap-3 justify-center md:justify-start mb-12">
       <span className="text-xs uppercase tracking-wider text-brand-slate">Lista de leitura</span>
       {categories.map((category) => (
-        <button
+        <Link
           key={category.id}
-          onClick={() => onCategoryChange(category.id as BlogCategory | 'todos')}
+          href={category.id === 'todos' ? '/blog' : `/blog?categoria=${category.id}`}
           className={cn(
             'px-2 py-1 text-sm font-medium transition-colors border-b-2',
             selectedCategory === category.id
@@ -30,7 +28,7 @@ export default function CategoryFilter({ selectedCategory, onCategoryChange }: C
           )}
         >
           {category.label}
-        </button>
+        </Link>
       ))}
     </div>
   )

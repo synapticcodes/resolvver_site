@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'planejamento-financeiro-para-iniciantes',
+  slug: 'como-economizar-nas-contas-do-mes-14-dicas-simples-para-colocar-na-rotina',
+  legacySlugs: ['planejamento-financeiro-para-iniciantes'],
   title: 'Como economizar nas contas do mês: 14 dicas simples para colocar na rotina',
   excerpt: 'Como economizar nas contas do mês: 14 dicas simples para colocar na rotina Está buscando maneiras práticas de reduzir as contas mensais e fazer o dinh...',
   category: 'conselhos-financeiros',

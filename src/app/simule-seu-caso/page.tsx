@@ -1,11 +1,12 @@
-import type { Metadata } from 'next'
 import Container from '@/components/ui/Container'
 import LeadForm from '@/components/forms/LeadForm'
+import { buildPageMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: 'Simule seu caso',
-  description: 'Descubra quanto você poderia reduzir das suas dívidas. Liquidamos suas dívidas com até 90% de desconto.',
-}
+  description: 'Descubra quanto você pode economizar com a renegociação de dívidas da Resolvver e envie sua simulação para receber contato.',
+  path: '/simule-seu-caso',
+})
 
 export default function SimulatePage() {
   return (

@@ -83,7 +83,7 @@ ${message ? `Mensagem: ${message}` : ''}
     await transporter.sendMail(mailOptions)
     return { success: true }
   } catch (error) {
-    console.error('Error sending email:', error)
+    console.error('Erro ao enviar email do lead:', error)
     throw error
   }
 }

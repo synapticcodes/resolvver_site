@@ -1,7 +1,8 @@
 import { BlogPost } from '@/types/blog'
 
 export const post: BlogPost = {
-  slug: 'investimentos-para-iniciantes',
+  slug: 'emprestimo-via-pix-por-que-virou-alternativa-ao-cartao-de-credito-e-quais-cuidados-tomar',
+  legacySlugs: ['investimentos-para-iniciantes'],
   title: 'Empréstimo via Pix: por que virou alternativa ao cartão de crédito e quais cuidados tomar',
   excerpt: 'Empréstimo via Pix: por que virou alternativa ao cartão de crédito e quais cuidados tomar Nos últimos anos, o Pix deixou de ser apenas um meio de paga...',
   category: 'credito',

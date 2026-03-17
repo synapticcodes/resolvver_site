@@ -2,6 +2,7 @@ export type BlogCategory = 'conselhos-financeiros' | 'credito'
 
 export interface BlogPost {
   slug: string
+  legacySlugs?: string[]
   title: string
   excerpt: string
   category: BlogCategory
