@@ -9,9 +9,9 @@ export default function Footer() {
   return (
     <footer className="bg-brand-navy text-white">
       <Container>
-        <div className="py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Logo and Description */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 lg:col-span-2">
             <Link href="/" className="inline-block mb-4">
               <Image
                 src="/images/logo-branco-optimized.webp"
@@ -71,13 +71,33 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="font-semibold text-white mb-4">Contato</h3>
-            <ul className="space-y-2 text-sm text-brand-sky/80">
-              <li>
-                <a href={`mailto:${siteConfig.contact.email}`} className="hover:text-brand-emerald transition-colors">
-                  {siteConfig.contact.email}
-                </a>
-              </li>
-            </ul>
+            <div className="max-w-sm rounded-2xl border border-brand-sky/15 bg-white/5 p-5 shadow-[0_18px_40px_rgba(0,0,0,0.08)]">
+              <ul className="space-y-4 text-sm text-brand-sky/80">
+                <li className="leading-relaxed">
+                  <span className="mb-1 block text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-sky/50">
+                    Email
+                  </span>
+                  <a href={`mailto:${siteConfig.contact.email}`} className="text-brand-sky transition-colors hover:text-brand-emerald">
+                    {siteConfig.contact.email}
+                  </a>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="mb-1 block text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-sky/50">
+                    Empresa
+                  </span>
+                  <span className="block">{siteConfig.company.cnpj}</span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="mb-1 block text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-sky/50">
+                    Endereço
+                  </span>
+                  <span className="block">{siteConfig.company.address}</span>
+                </li>
+              </ul>
+              <div className="mt-4 border-t border-brand-sky/10 pt-4">
+                <p className="text-sm font-medium text-brand-sky">{siteConfig.company.nationalCoverage}</p>
+              </div>
+            </div>
           </div>
         </div>
 

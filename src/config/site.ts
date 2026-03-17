@@ -17,6 +17,11 @@ export const siteConfig = {
     phone: '(11) 99999-9999',
     whatsapp: '(11) 99999-9999',
   },
+  company: {
+    cnpj: 'CNPJ 64.933.842/0001-89',
+    address: 'Avenida Carlos Gomes, 700, Boa Vista - 90480-000 Porto Alegre - RS',
+    nationalCoverage: 'Atuação em todo o Brasil',
+  },
   navigation: [
     { name: 'Home', href: '/' },
     { name: 'Sobre a Resolvver', href: '/sobre' },
