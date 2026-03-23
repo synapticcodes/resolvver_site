@@ -3,6 +3,7 @@ import { Manrope, Space_Grotesk } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import { siteConfig } from '@/config/site'
+import AttributionPersistence from '@/components/analytics/AttributionPersistence'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
@@ -86,6 +87,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${manrope.variable} ${spaceGrotesk.variable}`}>
+        <AttributionPersistence />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
