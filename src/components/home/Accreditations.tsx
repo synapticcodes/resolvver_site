@@ -16,15 +16,25 @@ export default function Accreditations() {
             {accreditations.subtitle}
           </p>
 
-          <div className="inline-flex items-center justify-center p-8 bg-white rounded-[32px] border border-brand-sky/80 shadow-soft">
-            <div className="flex items-center gap-5">
-              <div className="relative w-32 h-[84px]">
+          <div className="mx-auto inline-flex w-full max-w-[620px] items-center justify-center rounded-[32px] border border-brand-sky/80 bg-white p-5 shadow-soft sm:p-8">
+            <div className="flex w-full flex-col items-center justify-center gap-5 sm:flex-row sm:gap-8 md:gap-9">
+              <div className="relative w-full max-w-[180px] aspect-[224/187] sm:max-w-[210px] md:max-w-[225px]">
                 <Image
-                  src="/images/selo-procon.png"
-                  alt="Selo do Procon"
+                  src="/images/accreditations/procon-logo.webp"
+                  alt="Logo do selo do Procon"
                   fill
                   className="object-contain"
-                  sizes="128px"
+                  sizes="(max-width: 640px) 180px, (max-width: 768px) 210px, 225px"
+                />
+              </div>
+
+              <div className="relative w-full max-w-[145px] aspect-[350/481] sm:max-w-[150px] md:max-w-[165px]">
+                <Image
+                  src="/images/accreditations/procon-qr.webp"
+                  alt="Certificado do Procon com QR Code"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 640px) 145px, (max-width: 768px) 150px, 165px"
                 />
               </div>
             </div>
