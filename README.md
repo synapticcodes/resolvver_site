@@ -32,10 +32,10 @@ site_resolvver/
 - `/` - Home (Hero, Stats, Como funciona, Depoimentos, etc.)
 - `/sobre` - Sobre a Resolvver
 - `/faq` - Perguntas Frequentes (9 Q&A)
-- `/simule-seu-caso` - Formulário de lead com validação
+- `/simule-seu-caso` - Redirecionamento permanente para `/contato?modo=simulacao`
 - `/blog` - Lista de artigos (18 posts)
 - `/blog/[slug]` - Detalhe de artigo
-- `/contato` - Página de contato
+- `/contato` - Jornada de contato com suporte ao cliente e simulação
 - `/privacidade` - Política de privacidade
 - `/termos` - Termos de uso
 
@@ -63,6 +63,8 @@ SENTRY_TRACES_SAMPLE_RATE=0.1
 SENTRY_ORG=
 SENTRY_PROJECT=
 SENTRY_AUTH_TOKEN=
+WOLFGANG_TRACK_URL=
+NEXT_PUBLIC_WOLFGANG_META_PIXEL_ID=
 ```
 
 ### 3. Executar em desenvolvimento
@@ -99,6 +101,17 @@ npm start
 - Checkbox LGPD obrigatório
 - Envio de email via Nodemailer
 - Feedback visual de sucesso/erro
+
+### Contato e Simulação
+
+- `/contato` possui duas jornadas:
+  - `Já sou cliente`: busca por CPF com endpoint dedicado
+  - `Quero simular meu caso`: formulário qualificado com filtro por renda e dívida
+- `/simule-seu-caso` redireciona para `/contato?modo=simulacao`
+- Tracking Wolfgang fica restrito ao envio bem-sucedido da simulação
+- O envio para o endpoint Wolfgang depende de:
+  - `WOLFGANG_TRACK_URL`
+  - `NEXT_PUBLIC_WOLFGANG_META_PIXEL_ID`
 
 ### SEO
 
