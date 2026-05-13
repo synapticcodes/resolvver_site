@@ -83,12 +83,6 @@ export default function Footer() {
                 </li>
                 <li className="leading-relaxed">
                   <span className="mb-1 block text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-sky/50">
-                    Empresa
-                  </span>
-                  <span className="block">{siteConfig.company.cnpj}</span>
-                </li>
-                <li className="leading-relaxed">
-                  <span className="mb-1 block text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-sky/50">
                     Endereço
                   </span>
                   <span className="block">{siteConfig.company.address}</span>

@@ -23,7 +23,6 @@ export const siteConfig = {
     serviceHours: 'Horário de atendimento: seg a sex, 9h às 18h. Fora do horário, deixe sua mensagem e retornaremos.',
   },
   company: {
-    cnpj: 'CNPJ 64.933.842/0001-89',
     address: 'Avenida Carlos Gomes, 700, Boa Vista - 90480-000 Porto Alegre - RS',
     nationalCoverage: 'Atuação em todo o Brasil',
   },
