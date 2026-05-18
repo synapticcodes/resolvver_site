@@ -33,12 +33,13 @@ export default function AboutPage() {
                 <div className="absolute -inset-4 rounded-3xl border border-brand-emerald/20"></div>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-soft border border-brand-sky/70 bg-white">
                   <Image
-                    src="/images/photos/4.jpg"
+                    src="/images/photos/sobre-funcionarios-resolvver.webp"
                     alt="Equipe Resolvver"
                     fill
                     className="object-cover"
                     sizes="(min-width: 1024px) 420px, 90vw"
                     priority
+                    unoptimized
                   />
                 </div>
               </div>
@@ -64,6 +65,7 @@ export default function AboutPage() {
                   fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 520px, 90vw"
+                  unoptimized
                 />
               </div>
             </div>

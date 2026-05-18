@@ -60,6 +60,7 @@ export default function Hero() {
                   className="object-cover object-[center_20%]"
                   sizes="(min-width: 1024px) 384px, 320px"
                   priority
+                  unoptimized
                 />
               </div>
               <div className="absolute -right-4 -bottom-6 bg-white rounded-2xl p-4 shadow-soft border border-brand-sky/70 float-medium">

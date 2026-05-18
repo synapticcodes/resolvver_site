@@ -114,12 +114,13 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                 <div className="absolute -inset-4 rounded-3xl border border-brand-emerald/20"></div>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-soft border border-brand-sky/70 bg-white">
                   <Image
-                    src="/images/photos/A.jpg"
+                    src="/images/photos/blog-estabilidade-financeira.webp"
                     alt="Equipe Resolvver"
                     fill
                     className="object-cover"
                     sizes="(min-width: 1024px) 420px, 90vw"
                     priority
+                    unoptimized
                   />
                 </div>
               </div>
