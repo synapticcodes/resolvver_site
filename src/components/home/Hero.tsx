@@ -54,10 +54,10 @@ export default function Hero() {
               <div className="absolute -inset-12 rounded-full border border-brand-emerald/10"></div>
               <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full border-[14px] border-brand-emerald/80 p-2 bg-white shadow-soft overflow-hidden">
                 <Image
-                  src="/images/photos/1.png.webp"
+                  src="/images/photos/hero-cliente-negociacao.webp"
                   alt="Cliente Resolvver"
                   fill
-                  className="object-cover"
+                  className="object-cover object-[center_20%]"
                   sizes="(min-width: 1024px) 384px, 320px"
                   priority
                 />
