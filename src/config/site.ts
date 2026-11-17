@@ -2,6 +2,8 @@ export const siteConfig = {
   name: 'Resolvver',
   description: 'Renegociação de dívidas com até 90% de desconto. Mais de 600 mil clientes atendidos em 7 anos.',
   url: 'https://resolvver.com',
+  // Origens aceitas pelas rotas de API. O site é servido em www; o domínio sem www fica por compatibilidade.
+  allowedOrigins: ['https://resolvver.com', 'https://www.resolvver.com'],
   ogImage: 'https://resolvver.com/og-image.jpg',
   lastUpdated: '2026-03-17T00:00:00.000Z',
   analytics: {
