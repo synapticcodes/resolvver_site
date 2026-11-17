@@ -422,7 +422,7 @@ export default function ContatoExperience({
       if (error instanceof z.ZodError) {
         const nextErrors: Record<string, string> = {}
 
-        for (const issue of error.errors) {
+        for (const issue of error.issues) {
           const field = issue.path[0]
 
           if (field) {
