@@ -21,7 +21,7 @@ export const leadFormSchema = z.object({
     .optional(),
 
   consent: z.literal(true, {
-    errorMap: () => ({ message: 'Você deve aceitar os termos para continuar' })
+    message: 'Você deve aceitar os termos para continuar'
   })
 })
 
@@ -47,19 +47,19 @@ export const simulationLeadSchema = z.object({
     .toLowerCase(),
 
   perfil: z.enum(['aposentado', 'loas', 'servidor'], {
-    errorMap: () => ({ message: 'Selecione seu perfil' }),
+    message: 'Selecione seu perfil',
   }),
 
   faixa_divida: z.enum(['5k', '10k', '50k'], {
-    errorMap: () => ({ message: 'Selecione uma faixa de dívida elegível' }),
+    message: 'Selecione uma faixa de dívida elegível',
   }),
 
   faixa_renda: z.enum(['2k', '5k'], {
-    errorMap: () => ({ message: 'Selecione uma faixa de renda elegível' }),
+    message: 'Selecione uma faixa de renda elegível',
   }),
 
   consentimento: z.literal(true, {
-    errorMap: () => ({ message: 'Você precisa aceitar os termos para continuar' }),
+    message: 'Você precisa aceitar os termos para continuar',
   }),
 
   utm_source: z.string().trim().min(1).max(100),

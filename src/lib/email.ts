@@ -19,7 +19,7 @@ const getRequiredEnv = (name: 'SMTP_HOST' | 'SMTP_PORT' | 'SMTP_USER' | 'SMTP_PA
   return value
 }
 
-let transporter: nodemailer.Transporter | null = null
+let transporter: ReturnType<typeof nodemailer.createTransport> | null = null
 
 const getTransporter = () => {
   if (transporter) {
