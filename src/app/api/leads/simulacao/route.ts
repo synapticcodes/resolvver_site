@@ -89,7 +89,7 @@ export async function POST(request: NextRequest) {
       {
         success: false,
         message: 'Dados inválidos. Revise os campos e tente novamente.',
-        errors: validationResult.error.errors,
+        errors: validationResult.error.issues,
       },
       { status: 400 }
     )
