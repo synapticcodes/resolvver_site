@@ -25,6 +25,10 @@ export default function TermsPage() {
       <section className="py-16 md:py-24 bg-white">
         <Container size="small">
           <div className="prose prose-lg max-w-none">
+            <p>
+              Os serviços da Resolvver são prestados pela {siteConfig.company.legalName}, CNPJ {siteConfig.company.cnpj}, com sede na {siteConfig.company.fullAddress}.
+            </p>
+
             <h2>1. Aceitação dos Termos</h2>
             <p>
               Ao acessar e usar o site da Resolvver, você concorda em cumprir estes termos de uso e todas as leis e regulamentos aplicáveis.

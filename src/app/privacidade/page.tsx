@@ -27,6 +27,10 @@ export default function PrivacyPage() {
       <section className="py-16 md:py-24 bg-white">
         <Container size="small">
           <div className="prose prose-lg max-w-none">
+            <p>
+              Esta política se aplica ao site da Resolvver, marca da {siteConfig.company.legalName}, CNPJ {siteConfig.company.cnpj}, com sede na {siteConfig.company.fullAddress}, controladora dos dados pessoais tratados.
+            </p>
+
             <h2>1. Coleta de Informações</h2>
             <p>
               A Resolvver coleta informações pessoais quando você utiliza nossos serviços, incluindo nome, email e informações sobre suas dívidas.

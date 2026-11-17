@@ -14,7 +14,8 @@ export const siteConfig = {
   },
   contact: {
     email: 'contato@resolvver.com',
-    phone: '(11) 99999-9999',
+    phone: '(51) 2666-1144',
+    phoneHref: 'tel:+555126661144',
     whatsapp: '(11) 99999-9999',
   },
   support: {
@@ -23,6 +24,9 @@ export const siteConfig = {
     serviceHours: 'Horário de atendimento: seg a sex, 9h às 18h. Fora do horário, deixe sua mensagem e retornaremos.',
   },
   company: {
+    legalName: 'JUS SYSTEM LTDA',
+    cnpj: '64.933.842/0001-89',
+    fullAddress: 'Avenida Carlos Gomes, 700, Boa Vista, Porto Alegre – RS, CEP 90480-000',
     address: 'Avenida Carlos Gomes, 700, Boa Vista - 90480-000 Porto Alegre - RS',
     nationalCoverage: 'Atuação em todo o Brasil',
   },

@@ -83,6 +83,14 @@ export default function Footer() {
                 </li>
                 <li className="leading-relaxed">
                   <span className="mb-1 block text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-sky/50">
+                    Telefone
+                  </span>
+                  <a href={siteConfig.contact.phoneHref} className="text-brand-sky transition-colors hover:text-brand-emerald">
+                    {siteConfig.contact.phone}
+                  </a>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="mb-1 block text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-sky/50">
                     Endereço
                   </span>
                   <span className="block">{siteConfig.company.address}</span>
@@ -98,7 +106,12 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-brand-sky/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-brand-sky/60">
-            <p>&copy; {currentYear} Resolvver. Todos os direitos reservados.</p>
+            <div className="text-center md:text-left">
+              <p>&copy; {currentYear} Resolvver. Todos os direitos reservados.</p>
+              <p className="mt-1">
+                Resolvver é uma marca da {siteConfig.company.legalName} · CNPJ {siteConfig.company.cnpj}
+              </p>
+            </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/privacidade" className="hover:text-brand-emerald transition-colors">
                 Política de Privacidade
