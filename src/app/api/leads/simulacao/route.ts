@@ -8,7 +8,7 @@ const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000
 const RATE_LIMIT_MAX_REQUESTS = 5
 
 const allowedOrigins = new Set([
-  siteConfig.url,
+  ...siteConfig.allowedOrigins,
   'http://localhost:3000',
   'http://127.0.0.1:3000',
 ])
