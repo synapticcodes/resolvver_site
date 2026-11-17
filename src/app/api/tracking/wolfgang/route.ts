@@ -115,7 +115,7 @@ export async function POST(request: NextRequest) {
       {
         success: false,
         message: 'Payload de tracking inválido.',
-        errors: validationResult.error.errors,
+        errors: validationResult.error.issues,
       },
       { status: 400 }
     )
